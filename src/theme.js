@@ -2,9 +2,8 @@ import { createTheme } from '@material-ui/core/styles';
 
 const theme = createTheme({
     palette: {
-        type: 'dark',
         background: {
-            default: 'rgb(10,10,10)'
+            default: 'rgb(230,230,230)'
         },
     },
     typography: {

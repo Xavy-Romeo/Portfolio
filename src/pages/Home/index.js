@@ -1,11 +1,18 @@
+import useStyles from './styles';
+import Loader from '../../components/Loader'; 
+import Header from '../../components/Header';
 
 
 const Home = () => {
+    const classes = useStyles();
+
     return (
-        <div>
-            Test Home
-        </div>
-    )
+        <>
+            <Loader />
+            <Header />
+            Hello World!
+        </>
+    );
 };
 
 export default Home;

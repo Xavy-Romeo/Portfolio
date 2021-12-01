@@ -3,7 +3,7 @@ import { createTheme } from '@material-ui/core/styles';
 const theme = createTheme({
     palette: {
         background: {
-            default: 'rgb(230,230,230)'
+            default: 'rgb(220, 235, 235)'
         },
     },
     typography: {

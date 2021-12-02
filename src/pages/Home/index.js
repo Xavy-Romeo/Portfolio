@@ -11,8 +11,31 @@ const Home = () => {
         <>
             <Loader />
             <Header />
+
+            <main class="wrapper">
+                <section id="home">
+                    <Box style={{height: '110vh'}} />
+                </section> 
+                <section id="about">
+                    <Box style={{height: '100vh', background: 'red'}} />
+                </section> 
+                <section id="portfolio">
+                    <Box style={{height: '100vh', background: 'blue'}} />
+                </section> 
+                <section id="resume">
+                    <Box style={{height: '100vh', background: 'green'}} />
+                </section> 
+                <section id="contact">
+                    <Box style={{height: '100vh', background: 'orange'}} />
+                </section> 
+
+            </main>
+
+
+
             <Box style={{height: '200vh'}} />
-            Hello World!
+
+
             <Box className={classes.rightEffects_Home} />
             <Box className={classes.leftEffects_Home} />
         </>

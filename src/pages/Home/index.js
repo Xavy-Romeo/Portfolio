@@ -1,7 +1,9 @@
 import useStyles from './styles';
 import Loader from '../../components/Loader'; 
 import Header from '../../components/Header';
+import Top from '../../components/Top';
 
+import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 
 const Home = () => {
@@ -12,10 +14,16 @@ const Home = () => {
             <Loader />
             <Header />
 
-            <main class="wrapper">
-                <section id="home">
-                    <Box style={{height: '100vh'}} />
-                </section> 
+            <main >
+                <Container maxWidth='xl'>
+                    <Top />
+                </Container>
+
+
+
+
+
+
                 <section id="about">
                     <Box style={{height: '100vh', background: 'red'}} />
                 </section> 
@@ -28,7 +36,6 @@ const Home = () => {
                 <section id="contact">
                     <Box style={{height: '100vh', background: 'orange'}} />
                 </section> 
-
             </main>
 
 

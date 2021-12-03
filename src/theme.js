@@ -2,16 +2,15 @@ import { createTheme } from '@material-ui/core/styles';
 
 const theme = createTheme({
     palette: {
-        primary: {
-            main: 'rgb(0,0,0)',
-            contrastText: 'rgb(40,40,40)'
+        text: {
+            primary: 'rgb(40,40,40)'
         },
         background: {
             default: 'rgb(220, 235, 235)'
         },
     },
     typography: {
-        fontFamily: 'Ubuntu, sans-serif',
+        fontFamily: 'Rubik, sans-serif',
         fontWeightRegular: 400,
         fontWeightMedium: 500,
         fontWeightBold: 700,
@@ -91,8 +90,8 @@ const theme = createTheme({
             sm: 600,
             md: 960,
             lg: 1280,
-            xl: 1850,
-            wide: 2500
+            xl: 1600,
+            wide: 2200
         }
     },
     overrides: {

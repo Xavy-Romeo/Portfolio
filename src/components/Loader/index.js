@@ -27,23 +27,25 @@ const Loader = () => {
     }, []);
 
     return (
-        <Box className={loader ? `${classes.loadingPage} fade-out-page` : classes.loaded}>
+        <Box className={loader ? `${classes.loadingPage_Loader} fade-out-page` : classes.loaded_Loader}>
             <Grid 
                 container 
-                className={!fade ? `${classes.loaderContainer} fade-out` : classes.loaded}
+                className={!fade ? `${classes.loaderContainer_Loader} fade-out` : classes.loaded_Loader}
                 direction='column'
                 alignItems='center'
             >
-                <Typography className={classes.loadingTitle} variant='h1'>
+                <Typography className={classes.loadingTitle_Loader} variant='h1'>
                     Xavy Romeo
                 </Typography>
                 <Box>
                     <PulseLoader size={15} color='rgb(255, 35, 35)' />
                 </Box>
                 <Box>
-                    <img src={Logo} className={classes.loadingLogo} alt='loading logo'/>  
+                    <img src={Logo} className={classes.loadingLogo_Loader} alt='loading logo'/>  
                 </Box>
             </Grid>
+            <Box className={classes.rightEffects_Loader} />
+            <Box className={classes.leftEffects_Loader} />
         </Box>
     );
 

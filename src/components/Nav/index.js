@@ -18,7 +18,7 @@ const Nav = () => {
     ];
 
     const setActiveSection = () => {
-        const links = document.querySelectorAll('a');
+        const links = document.querySelectorAll('.nav-link');
         const sections = document.querySelectorAll('section');
         let length = sections.length;
 
@@ -35,18 +35,20 @@ const Nav = () => {
         <nav>
             <Box className={classes.container_Nav}>
                 <ul>
-                    {navLinks.map((link, index) => (
-                        <li key={index}>
-                            <a 
-                                href={link.href}
-                                className={`${classes.navLinkSpan_Nav} nav-link`}
-                            >
-                                <span className={classes.navLinkSpan_Nav}>
-                                    {link.name}
-                                </span>
-                            </a>
-                        </li>
-                    ))}
+                    <Grid container >
+                        {navLinks.map((link, index) => (
+                            <li className={classes.listItem_Nav} key={index}>
+                                <a 
+                                    href={link.href}
+                                    className={`${classes.navLink_Nav} nav-link`}
+                                >
+                                    <Typography className={`${classes.navLinkSpan_Nav} nav-link-span`} variant='caption' component='span'>
+                                        {link.name}
+                                    </Typography>
+                                </a>
+                            </li>
+                        ))}
+                    </Grid>
                 </ul>
             </Box>
         </nav>

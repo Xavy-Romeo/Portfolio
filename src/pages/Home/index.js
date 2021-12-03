@@ -14,7 +14,7 @@ const Home = () => {
 
             <main class="wrapper">
                 <section id="home">
-                    <Box style={{height: '110vh'}} />
+                    <Box style={{height: '100vh'}} />
                 </section> 
                 <section id="about">
                     <Box style={{height: '100vh', background: 'red'}} />

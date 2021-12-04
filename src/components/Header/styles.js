@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center'
     },
     headerScroll_Header: {
-        background: 'rgba(220, 235, 235,0.95)',
+        background: 'rgba(220, 235, 235,0.7)',
         height: '80px',
         justifyContent: 'center'
     },

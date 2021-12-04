@@ -1,5 +1,9 @@
+/* import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 /* universal styles */
 * {
@@ -19,8 +23,13 @@
 }
 /* end text theme */
 
+.main-header {
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
 /* nav link styles */
-.nav-link {
+.nav-link, .say-hi-link {
   text-transform: uppercase;
   padding: 0;
   letter-spacing: 1px;
@@ -47,7 +56,9 @@
 }
 
 .nav-link-span:after,
-.nav-link-span:before {
+.nav-link-span:before,
+.say-hi-link:after,
+.say-hi-link:before {
   content: "";
   position: absolute;
   display: block;
@@ -57,7 +68,8 @@
   transition: all 0.35s ease;
 }
 
-.nav-link-span:after {
+.nav-link-span:after,
+.say-hi-link:after {
   width: 0%;
   height: 0%;
   top: 0;
@@ -66,7 +78,8 @@
   border-left: 2px solid transparent;
 }
 
-.nav-link-span:before {
+.nav-link-span:before,
+.say-hi-link:before {
   width: 0%;
   height: 0%;
   right: 0;
@@ -76,10 +89,16 @@
 }
 
 .nav-link-span:hover::before,
-.nav-link-span:hover::after {
+.nav-link-span:hover::after,
+.say-hi-link:hover::before,
+.say-hi-link:hover::after {
   width: 100%;
   height: 100%;
   border-image: radial-gradient(#f64f59, #12c2e9, #f64f59) 1;
+}
+
+.say-hi-link:hover {
+  padding: 10px 0;
 }
 /* end nav link styles */
 

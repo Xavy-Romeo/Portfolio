@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         textDecoration: 'none'
     },
     navLinkSpan_Nav: {
-        color: theme.palette.primary.contrastText,
+        color: theme.palette.text.primary,
     }
 }));
 

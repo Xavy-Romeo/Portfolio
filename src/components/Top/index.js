@@ -1,6 +1,6 @@
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
 import { MdWavingHand } from 'react-icons/md';
 
 import useStyles from './styles';
@@ -13,9 +13,9 @@ const Top = () => {
     return (
         <section className={classes.topSection_Top} id='home'>
             <Grid container className={classes.mainGrid_Top} justifyContent='space-between' alignItems='center'>
-                <Grid item className={classes.infoGrid_Top} xs={6} style={{paddingRight: 20}}>
+                <Grid item className={classes.infoGrid_Top} xs={6}>
                     <Grid container direction='column' justifyContent='center'>
-                        <Typography variant='subtitle2' style={{textTransform: 'uppercase', fontWeight: 'bold', paddingBottom: '10px'}}>
+                        <Typography className={classes.welcome_Top} variant='subtitle2'>
                             Welcome
                         </Typography>    
                         <Typography className={classes.hiTitle_Top} variant='h2'>
@@ -24,17 +24,16 @@ const Top = () => {
                         <Typography className={`${classes.webDevTitle_Top} text-theme`} variant='h2'>
                             Front End Web Developer
                         </Typography>
-                        <Typography style={{paddingBottom: '10px'}}>
+                        <Typography className={classes.info_Top}>
                             I develop and build web applicatons specific to your needs. Click Say Hi below to let me know how my skills can work for you.
                         </Typography>
-                        <a href='#contact' style={{textDecoration: 'none'}}>
-                            <Typography className={`say-hi-link`} style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}} variant='subtitle2' component='span' style={{color: 'black', letterSpacing: '2px', textTransform: 'uppercase'}}>
+                        <a href='#contact' className={classes.sayHiLink_Top}>
+                            <Typography className={`${classes.sayHiLinkSpan_Top} say-hi-link`} variant='subtitle2' component='span'>
                                 Say Hi 
-                                {/* 👋 */}
-                                <MdWavingHand style={{marginLeft: '5px', paddingTop: 5}} />
+                                <MdWavingHand className={classes.handWave_Top} />
                             </Typography>
                         </a>
-                        <Typography variant='h3' className={`text-theme`} style={{fontFamily: 'Kaushan Script, sans-sefif', fontWeight: 'bold', transform: 'skewY(-5deg)', paddingBottom: 5, display: 'flex', justifyContent: 'center', paddingRight: '100px', textShadow: '9px 9px 20px rgb(50,50,50,.5)'}}>
+                        <Typography variant='h3' className={`${classes.signature_Top} text-theme`}>
                             Xavy Romeo
                         </Typography>
                     </Grid>
@@ -47,7 +46,7 @@ const Top = () => {
                                 className={classes.image_Top} 
                                 alt='profile' 
                                 width='100%'
-                                
+                                height='100%'
                             />
                         </Box>
                     </Grid>

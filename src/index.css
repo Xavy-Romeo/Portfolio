@@ -1,9 +1,7 @@
 /* import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Kaushan+Script&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap'); */
-
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
 /* universal styles */
 * {
@@ -31,9 +29,7 @@
 /* nav link styles */
 .nav-link, .say-hi-link {
   text-transform: uppercase;
-  padding: 0;
   letter-spacing: 1px;
-  font-size: 14px;
   position: relative; 
 }
 
@@ -101,6 +97,25 @@
   padding: 10px 0;
 }
 /* end nav link styles */
+
+/* section styles */
+.border-top {
+  position: relative; 
+}
+
+.border-top:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 1px;
+  left: 0;
+  right: 0;
+  max-width: 1450px;
+  margin: 0 auto;
+  background: #292929;
+  opacity: 0.1; 
+}
+/* end section styles */
 
 /* animations */
 .fade-out-page{

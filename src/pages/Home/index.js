@@ -2,6 +2,7 @@ import useStyles from './styles';
 import Loader from '../../components/Loader'; 
 import Header from '../../components/Header';
 import Top from '../../components/Top';
+import About from '../../components/About';
 
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
@@ -17,6 +18,7 @@ const Home = () => {
             <main >
                 <Container maxWidth='xl'>
                     <Top />
+                    <About />
                 </Container>
 
 
@@ -24,9 +26,6 @@ const Home = () => {
 
 
 
-                <section id="about">
-                    <Box style={{height: '100vh', background: 'red'}} />
-                </section> 
                 <section id="portfolio">
                     <Box style={{height: '100vh', background: 'blue'}} />
                 </section> 

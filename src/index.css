@@ -99,6 +99,10 @@
 /* end nav link styles */
 
 /* section styles */
+.section {
+  padding: 50px 0
+}
+
 .border-top {
   position: relative; 
 }

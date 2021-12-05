@@ -2,9 +2,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({ 
     topSection_Top: {
-        marginTop: '80px',
-        padding: '100px 0 120px 0',
-        minHeight: '100vh'
+        minHeight: '95vh'
+    },
+    mainGrid_Top: {
+        padding: '180px 0 100px 0',
     },
     infoGrid_Top: {
         paddingRight: '20px'

@@ -50,15 +50,8 @@ const About = () => {
                         <Typography style={{ marginBottom: '10px', letterSpacing: '1.25px'}} variant='body2'>
                             <span className={classes.bold_About}> I am Xavy Romeo, a Front End Web Developer </span>
                             with a degree in Business Economics from UC Irvine and a 
-                            Full Stack Web Development 
-                            certificate from 
-                            UCLA
-                            Extension Boot Camps. I can help visions and ideas come to life. 
-
-
-
-
-                            
+                            Full Stack Web Development certificate from UCLA
+                            Extension Boot Camps. I can help visions and ideas come to life.                             
                         </Typography>
                         <Typography variant='body2'>    
 

@@ -28,9 +28,6 @@ const Home = () => {
 
 
 
-                <section id="portfolio">
-                    <Box style={{height: '100vh', background: 'blue'}} />
-                </section> 
                 <section id="resume">
                     <Box style={{height: '100vh', background: 'green'}} />
                 </section> 

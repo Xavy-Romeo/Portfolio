@@ -32,6 +32,9 @@
   letter-spacing: 1px;
   position: relative; 
 }
+.view-project-link {
+  position: relative;
+}
 
 .nav-link:after {
   content: "";
@@ -54,7 +57,9 @@
 .nav-link-span:after,
 .nav-link-span:before,
 .say-hi-link:after,
-.say-hi-link:before {
+.say-hi-link:before,
+.view-project-link:after,
+.view-project-link:before {
   content: "";
   position: absolute;
   display: block;
@@ -65,7 +70,8 @@
 }
 
 .nav-link-span:after,
-.say-hi-link:after {
+.say-hi-link:after,
+.view-project-link:after {
   width: 0%;
   height: 0%;
   top: 0;
@@ -75,7 +81,8 @@
 }
 
 .nav-link-span:before,
-.say-hi-link:before {
+.say-hi-link:before,
+.view-project-link:before {
   width: 0%;
   height: 0%;
   right: 0;
@@ -87,7 +94,9 @@
 .nav-link-span:hover::before,
 .nav-link-span:hover::after,
 .say-hi-link:hover::before,
-.say-hi-link:hover::after {
+.say-hi-link:hover::after,
+.view-project-link:hover::before,
+.view-project-link:hover::after {
   width: 100%;
   height: 100%;
   border-image: radial-gradient(#f64f59, #12c2e9, #f64f59) 1;
@@ -143,3 +152,26 @@
 }
 
 /* end animations */
+
+.skills-bar-container {
+  position: relative;
+}
+
+.skills-bar-container::before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-radius:15px;
+  border:2px solid transparent;
+  background:radial-gradient(#f64f59, #12c2e9, #f64f59) border-box;
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out; 
+  mask-composite: exclude;
+  mask: 'none';
+  position: 'relative';
+}

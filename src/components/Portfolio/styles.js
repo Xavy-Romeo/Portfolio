@@ -32,6 +32,12 @@ const useStyles = makeStyles((theme) => ({
     mainSectionTitle_Portfolio: {
         fontWeight: '500',
         textShadow: `1px 1px ${theme.palette.text.primary}`
+    },
+    paddingLeft_Portfolio: {
+        paddingLeft: '.5%'
+    },
+    paddingRight_Portfolio: {
+        paddingRight: '.5%'
     }
 }));
 

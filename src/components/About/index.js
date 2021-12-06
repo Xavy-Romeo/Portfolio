@@ -81,7 +81,7 @@ const About = () => {
                         <Typography className={`text-theme`} variant='h5' style={{marginTop: '20px', fontWeight: '600', textShadow: '1px 1px black'}}>
                             My Skills
                         </Typography>
-                        <Grid container className={classes.skillBarContainer_About}>
+                        <Grid container className={`${classes.skillBarContainer_About} skills-bar-container`}>
                             {skills.map((skill, index) => (
                                 <Grid item xs={3} key={index}>
                                     <Grid container direction='column' alignItems='center' style={{padding: '10px 0'}}>

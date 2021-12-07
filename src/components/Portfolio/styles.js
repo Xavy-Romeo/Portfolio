@@ -24,7 +24,12 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '600',
         textShadow: `1px 1px ${theme.palette.text.primary}`
     },
-
+    modal_Project: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background:'rgba(0,0,0,.85)'
+    },
     sampleWorkTitleContainer_Portfolio: {
         marginBottom: '30px'
     },
@@ -90,7 +95,10 @@ const useStyles = makeStyles((theme) => ({
     viewProjectHover_Portfolio: {
         letterSpacing: '2px', 
         textTransform: 'uppercase', 
-        color: 'rgba(18,194,233,1)'
+        color: 'rgba(18,194,233,1)',
+        '&:hover': {
+            color: 'rgba(18,194,233,.5)'
+        }
     },
     projectInfoContainer_Portfolio: {
         width: '90%'

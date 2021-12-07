@@ -21,9 +21,18 @@ const Portfolio = () => {
                     My Work
                 </Typography>
             </Grid>
-            <Grid container direction='column'>                    
+            <Grid container direction='column'>
+                <Grid container className={classes.sampleWorkTitleContainer_Portfolio} direction='column' alignItems='center'>
+                    <Typography className={classes.sampleWorkTitle_Portfolio} variant='h4'>
+                        Some Examples Of My Work
+                    </Typography>
+                    <Typography className={classes.sampleWorkText_Portfolio} variant='body2'>
+                        Examples include my knowledge in React, JavaScript, Database implementation, internal and external API integration, 
+                        API access control, CSS, and Responsive Design.
+                    </Typography>
+                </Grid>                    
                 <Grid container>
-                    <Grid item xs={4} className={`${classes.projectGridContainer_Portfolio} ${classes.paddingRight_Portfolio}`}>
+                    <Grid item xs={4} className={classes.projectGridContainer_Portfolio}>
                         <Grid 
                             container 
                             className={classes.projectGrid_Portfolio}
@@ -80,7 +89,7 @@ const Portfolio = () => {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item xs={4} className={`${classes.projectGridContainer_Portfolio} ${classes.paddingLeft_Portfolio} ${classes.paddingRight_Portfolio}`}>
+                    <Grid item xs={4} className={classes.projectGridContainer_Portfolio}>
                         <Grid 
                             container 
                             className={classes.projectGrid_Portfolio}
@@ -136,7 +145,7 @@ const Portfolio = () => {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item xs={4} className={`${classes.projectGridContainer_Portfolio} classes.paddingLeft_Portfolio}`}>
+                    <Grid item xs={4} className={classes.projectGridContainer_Portfolio}>
                         <Grid 
                             container 
                             className={classes.projectGrid_Portfolio}
@@ -169,7 +178,7 @@ const Portfolio = () => {
                             <Grid container className={classes.projectInfoContainer_Portfolio} direction='column' justifyContent='space-between'>
                                 <Grid container direction='column'>
                                 <Typography className={`${classes.projectAppTitle_Project} text-theme`} variant='body2'>
-                                        Runner Landing Page
+                                        Run Buddy Landing Page
                                     </Typography>
                                     <Typography className={classes.projectTitle_Project} variant='subtitle1'>
                                         Run Buddy
@@ -194,9 +203,14 @@ const Portfolio = () => {
                     </Grid>
                 </Grid>
 
-                <Box>
-                    Want to see More??? Visit my GitHub!!!
-                </Box>
+                <Grid container className={classes.seeMoreContainer_Portfolio} justifyContent='center'>
+                    <Typography variant='body2'>
+                        Want to see More??? Visit my GitHub 
+                        <a href='#' className={classes.seeMoreHereLink_Portfolio}>
+                            Here
+                        </a>
+                    </Typography>
+                </Grid>
                 
             </Grid>            
         </section>

@@ -24,24 +24,22 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '600',
         textShadow: `1px 1px ${theme.palette.text.primary}`
     },
-    paddingLeft_Portfolio: {
-        paddingLeft: '1%'
+
+    sampleWorkTitleContainer_Portfolio: {
+        marginBottom: '30px'
     },
-    paddingRight_Portfolio: {
-        paddingRight: '1%'
+    sampleWorkTitle_Portfolio: {
+        fontWeight: '600'
     },
-    mainSectionTitleContainer_Portfolio: {
-        width: '100%', 
-        display: 'flex', 
-        justifyContent: 'center'
-    },
-    mainSectionTitle_Portfolio: {
-        fontWeight: '500',
-        textShadow: `1px 1px ${theme.palette.text.primary}`
+    sampleWorkText_Portfolio: {
+        textAlign: 'center', 
+        maxWidth: '50%', 
+        marginTop: '15px'
     },
     projectGridContainer_Portfolio: {
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        padding: theme.spacing(2)
     },
     projectGrid_Portfolio: {
         borderRadius: '15px', 
@@ -49,14 +47,16 @@ const useStyles = makeStyles((theme) => ({
         width: '100%', 
         padding: '5% 0', 
         background: 'linear-gradient(145deg,rgba(205,235,235,.3),rgba(255,255,255,.5))', 
-        boxShadow: '5px 5px 15px #d1d9e6,-5px -5px 15px #fff',
+        boxShadow: '5px 5px 15px rgb(209,217,230),-5px -5px 15px rgb(255,255,255)',
         maxWidth: '350px'
     },
     imgProjectContainer_Portfolio: {
         position: 'relative', 
         heigth: '100%', 
         width: '90%', 
-        marginBottom: '15px'
+        marginBottom: '15px',
+        border: `1px solid rgba(40,40,40,.3)`,
+        borderRadius: '3px'
     },
     imgProject_Portfolio: {
         borderRadius: '3px'
@@ -128,6 +128,14 @@ const useStyles = makeStyles((theme) => ({
     },
     viewProjectArrow_Portfolio: {
         margin: '0 2px 0 7px'
+    },
+    seeMoreContainer_Portfolio: {
+        marginTop: '20px'
+    },
+    seeMoreHereLink_Portfolio: {
+        textDecoration: 'none', 
+        marginLeft: '4px', 
+        color: 'rgb(110,110,110)'
     }
 }));
 

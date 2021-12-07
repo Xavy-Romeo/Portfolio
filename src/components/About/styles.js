@@ -27,18 +27,28 @@ const useStyles = makeStyles((theme) => ({
     bold_About: {
         fontWeight: '600'
     },
-    skillBarContainer_About: {
-        // width: '100%',
-        // height: '100%',
-        // borderImage: 'radial-gradient(#f64f59, #12c2e9, #f64f59) 1',
-        // border: '2px solid transparent',
-        // marginTop: '10px',
-        // padding: '20px',
-        // position: 'relative',
-       
-       
+    profileImgContainer_About: {
+        height: '450px'
+    },
+    profileImg_About: {
+        borderRadius: '30%', 
+        boxShadow: '5px 5px 15px rgb(255,255,255),-5px -5px 15px rgb(255,255,255)'
+    },
+    aboutText_About: {
+        marginBottom: '10px', 
+        letterSpacing: '1.25px'
+    },
+    mySkillsTitle_About: {
+        marginTop: '20px', 
+        fontWeight: '600', 
+        textShadow: `1px 1px ${theme.palette.text.primary}`
+    },
+    skillContainer_About: {
+        padding: '10px 0'
+    },
+    skillName_About: {
+        textTransform: 'uppercase'
     }
-
 }));
 
 export default useStyles;

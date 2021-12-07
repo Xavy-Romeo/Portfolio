@@ -166,7 +166,7 @@
   bottom:0;
   border-radius:15px;
   border:2px solid transparent;
-  background:radial-gradient(#f64f59, #12c2e9, #f64f59) border-box;
+  background:radial-gradient(rgb(246,79,89), rgb(18,194,233), rgb(246,79,89)) border-box;
   -webkit-mask: 
      linear-gradient(#fff 0 0) padding-box, 
      linear-gradient(#fff 0 0);

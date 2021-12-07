@@ -34,10 +34,10 @@ const useStyles = makeStyles((theme) => ({
         textShadow: `1px 1px ${theme.palette.text.primary}`
     },
     paddingLeft_Portfolio: {
-        paddingLeft: '.5%'
+        paddingLeft: '1%'
     },
     paddingRight_Portfolio: {
-        paddingRight: '.5%'
+        paddingRight: '1%'
     }
 }));
 

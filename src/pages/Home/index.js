@@ -36,11 +36,6 @@ const Home = () => {
                 </section> 
             </main>
 
-
-
-            <Box style={{height: '200vh'}} />
-
-
             <Box className={classes.rightEffects_Home} />
             <Box className={classes.leftEffects_Home} />
         </>

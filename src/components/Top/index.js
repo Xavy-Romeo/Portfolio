@@ -13,7 +13,7 @@ const Top = () => {
     return (
         <section className={classes.topSection_Top} id='home'>
             <Grid container className={classes.mainGrid_Top} justifyContent='space-between' alignItems='center'>
-                <Grid item className={classes.infoGrid_Top} xs={6}>
+                <Grid item className={classes.infoGrid_Top} xs={7}>
                     <Grid container direction='column' justifyContent='center'>
                         <Typography className={classes.welcome_Top} variant='subtitle2'>
                             Welcome
@@ -22,7 +22,7 @@ const Top = () => {
                             Hi, I'm Xavy Romeo
                         </Typography>
                         <Typography className={`${classes.webDevTitle_Top} text-theme`} variant='h2'>
-                            Front End Web Developer
+                            Full Stack Software Engineer
                         </Typography>
                         <Typography className={classes.info_Top}>
                             I develop and build web applicatons specific to your needs. Click Say Hi below to let me know how my skills can work for you.

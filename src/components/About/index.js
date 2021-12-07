@@ -38,60 +38,28 @@ const About = () => {
                 </Typography>
             </Grid>
             <Grid container>
-                <Grid item xs={6}>
-                    <Box style={{height: '450px', display: 'flex', justifyContent: 'center'}}>
-                        <img src={Profile2} height='100%' alt='Xavy Smiling!' 
-                            style={{borderRadius: '30%', boxShadow: '6px 6px 20px black'}}
-                        />
+                <Grid item xs={5}>
+                    <Box className={classes.profileImgContainer_About}>
+                        <img src={Profile2} className={classes.profileImg_About} height='100%' alt='Xavy Smiling!'/>
                     </Box>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={7}>
                     <Box>
-                        <Typography style={{ marginBottom: '10px', letterSpacing: '1.25px'}} variant='body2'>
-                            <span className={classes.bold_About}> I am Xavy Romeo, a Front End Web Developer </span>
+                        <Typography className={classes.aboutText_About} variant='body2'>
+                            <span className={classes.bold_About}> I am Xavy Romeo, a Full Stack Software Engineer </span>
                             with a degree in Business Economics from UC Irvine and a 
-                            Full Stack Web Development 
-                            certificate from 
-                            UCLA
-                            Extension Boot Camps. I can help visions and ideas come to life. 
-
-
-
-
-                            
-                        </Typography>
-                        <Typography variant='body2'>    
-
-                        {/* Take a look at my projects and see if my knowledge and skills
-                            are a right fit for you. */}
-                            {/* Known as a Problem-Solver and simply gets things done. 
-
-                             Show me a design and I can create it. 
-                           
-                             
-
-
-                            applied agile development principles coupled with version control, testing, code review, and collaborative coding.
-                            I speak English, Spanish and some French.
-                            Spare time soccer, baseball, gym, and explore the world.
-                    
-
-
-                            Responsive Design!!!! Making API calls
-
-                            
-
-                            based in Sunny Southern California.  */}
-                        </Typography>
+                            Full Stack Web Development certificate from UCLA
+                            Extension Boot Camps. I can help visions and ideas come to life.                             
+                        </Typography>   
                     </Box>
                     <Grid container direction='column' alignItems='center'>
-                        <Typography className={`text-theme`} variant='h5' style={{marginTop: '20px', fontWeight: '600', textShadow: '1px 1px black'}}>
+                        <Typography className={`${classes.mySkillsTitle_About} text-theme`} variant='h5'>
                             My Skills
                         </Typography>
-                        <Grid container className={classes.skillBarContainer_About}>
+                        <Grid container className={`skills-bar-container`}>
                             {skills.map((skill, index) => (
                                 <Grid item xs={3} key={index}>
-                                    <Grid container direction='column' alignItems='center' style={{padding: '10px 0'}}>
+                                    <Grid container className={classes.skillContainer_About} direction='column' alignItems='center'>
                                         <Box >
                                             <img 
                                                 src={skill.image} 
@@ -101,7 +69,7 @@ const About = () => {
                                             />
                                         </Box>
                                         <Box>
-                                            <Typography style={{textTransform: 'uppercase'}} variant='caption1'>
+                                            <Typography className={classes.skillName_About} variant='caption1'>
                                                 {skill.name}
                                             </Typography>
                                         </Box>

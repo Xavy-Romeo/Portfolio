@@ -30,7 +30,7 @@ const Header = () => {
 
     return (
         <AppBar className={!headerScroll ? classes.header_Header : `${classes.headerScroll_Header} main-header`}>
-            <Toolbar>
+            <Toolbar className={classes.toolbar_Header}>
                 <Container maxWidth='xl'>
                     <Grid container justifyContent='space-between' alignItems='center'> 
                         <Grid item xs={3}>

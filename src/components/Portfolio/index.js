@@ -1,24 +1,44 @@
+import { useState } from 'react';
+
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
+import Modal from '@material-ui/core/Modal';
 import { BsArrowUpRight } from 'react-icons/bs';
 
 import useStyles from './styles';
-import TheXavyShop from '../../assets/images/the-xavy-shop.png';
-import HowRU from '../../assets/images/howru.png';
-import RunBuddy from '../../assets/images/run-buddy.png';
+import ProjectModal from '../ProjectModal';
+import projects from '../../utils/projects';
 
 const Portfolio = () => {
     const classes = useStyles();
 
-    const projects = [
-        {name: 'The Xavy Shop', type: 'E-commerce Application', languages: 'React, Material-UI, MongoDB, Express, JavaScript, NodeJS, HTML, CSS, GraphQL', image: TheXavyShop},
-        {name: 'HowRU', type: 'Mental Health Application', languages: 'React, Material-UI, MongoDB, Express, JavaScript, AJAX, HTML, CSS, NodeJS', image: HowRU},
-        {name: 'Run Buddy', type: 'Run Buddy Landing Page', languages: 'HTML, CSS', image: RunBuddy}
-    ];
+    const [open, setOpen] = useState(false);
+  
+    const handleOpen = (project) => {
+      setOpen(true);
+      setModalProject(project);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
+
+    const [modalProject, setModalProject] = useState({});
     
     return (
         <section className={`section border-top`} id='portfolio'>
+            <Modal
+                className={classes.modal_Project}
+                open={open}
+                onClose={handleClose}
+            >
+                <ProjectModal 
+                    project={modalProject}
+                    handleClose={handleClose}
+                />
+            </Modal>
+
             <Grid container className={classes.sectionTitleContainer} justifyContent='center'>
                 <Typography className={classes.sectionTitleShadow}>
                     Portfolio
@@ -34,12 +54,12 @@ const Portfolio = () => {
                     </Typography>
                     <Typography className={classes.sampleWorkText_Portfolio} variant='body2'>
                         Examples include my knowledge in React, JavaScript, Database implementation, internal and external API integration, 
-                        API access control, CSS, and Responsive Design.
+                        API access control, global and local state management, payment processing, CSS, and Responsive Design.
                     </Typography>
                 </Grid>                    
-                <Grid container>
+                <Grid container spacing={5}>
                     {projects.map((project, index) => (
-                        <Grid item xs={4} className={classes.projectGridContainer_Portfolio} key={index}>
+                        <Grid item xs={4} key={index}>
                             <Grid 
                                 container 
                                 className={classes.projectGrid_Portfolio}
@@ -47,8 +67,11 @@ const Portfolio = () => {
                                 justifyContent='center' 
                                 alignItems='center' 
                             >
-                                <Box className={classes.imgProjectContainer_Portfolio}>
-                                    <img src={project.image} className={classes.imgProject_Portfolio} height='100%' width='100%' alt='' />
+                                <Box 
+                                    onClick={() => handleOpen(project)}
+                                    className={classes.imgProjectContainer_Portfolio}
+                                >
+                                    <img src={project.image} className={classes.imgProject_Portfolio} height='100%' width='100%' alt={project.name} />
                                     <Box className={classes.imgHoverContainer_Portfolio}>
                                         <Box className={classes.infoProjectHoverContainer_Portfolio}>
                                             <Grid 
@@ -85,7 +108,7 @@ const Portfolio = () => {
                                         </Typography>
                                     </Grid>
                                     <Box className={classes.viewProjectContainer_Project}>
-                                        <a href='#' className={classes.viewProjectLink_Project}>
+                                        <a onClick={() => handleOpen(project)} className={classes.viewProjectLink_Project}>
                                             <Typography className={`${classes.viewProjectLinkTypography_Project} view-project-link`} variant='caption'>
                                                 View Project
                                                 <BsArrowUpRight className={classes.viewProjectArrow_Portfolio} />
@@ -97,175 +120,6 @@ const Portfolio = () => {
                             </Grid>
                         </Grid>
                     ))}
-                    {/* <Grid item xs={4} className={classes.projectGridContainer_Portfolio}>
-                        <Grid 
-                            container 
-                            className={classes.projectGrid_Portfolio}
-                            direction='column' 
-                            justifyContent='center' 
-                            alignItems='center' 
-                        >
-                            <Box className={classes.imgProjectContainer_Portfolio}>
-                                <img src={testImage} className={classes.imgProject_Portfolio} height='100%' width='100%' alt='' />
-                                <Box className={classes.imgHoverContainer_Portfolio}>
-                                    <Box className={classes.infoProjectHoverContainer_Portfolio}>
-                                        <Grid 
-                                            container 
-                                            className={classes.infoProjectHover_Portfolio} 
-                                            direction='column' 
-                                            justifyContent='center' 
-                                            alignItems='center' 
-                                        >
-                                            <Typography variant='subtitle2'>
-                                                Manage It
-                                            </Typography>
-                                            
-                                            <Typography className={classes.viewProjectHover_Portfolio} variant='caption'>
-                                                View Project
-                                            </Typography>
-                                        </Grid>
-                                    </Box>
-                                </Box>
-                            </Box>
-                            <Grid container className={classes.projectInfoContainer_Portfolio} direction='column' justifyContent='space-between'>
-                                <Grid container direction='column'>
-                                    <Typography className={`${classes.projectAppTitle_Project} text-theme`} variant='body2'>
-                                        E-Commerce Application
-                                    </Typography>
-                                    <Typography className={classes.projectTitle_Project} variant='subtitle1'>
-                                        The Xavy Shop
-                                    </Typography>
-                                    <Typography className={classes.techUsed_Project} variant='caption'>
-                                        Technologies Used: 
-                                    </Typography>
-                                    <Typography className={classes.techUsedInfo_Project} variant='caption'>
-                                        React, Material-UI, MongoDB, Express, JavaScript, NodeJS, HTML, CSS, GraphQL
-                                    </Typography>
-                                </Grid>
-                                <Box className={classes.viewProjectContainer_Project}>
-                                    <a href='#' className={classes.viewProjectLink_Project}>
-                                        <Typography className={`${classes.viewProjectLinkTypography_Project} view-project-link`} variant='caption'>
-                                            View Project
-                                            <BsArrowUpRight className={classes.viewProjectArrow_Portfolio} />
-                                        </Typography>
-                                    </a>
-                                </Box>
-                                
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                    <Grid item xs={4} className={classes.projectGridContainer_Portfolio}>
-                        <Grid 
-                            container 
-                            className={classes.projectGrid_Portfolio}
-                            direction='column' 
-                            justifyContent='center' 
-                            alignItems='center' 
-                        >
-                            <Box className={classes.imgProjectContainer_Portfolio}>
-                                <img src={HowRU} className={classes.imgProject_Portfolio} height='100%' width='100%' alt='' />
-                                <Box className={classes.imgHoverContainer_Portfolio}>
-                                    <Box className={classes.infoProjectHoverContainer_Portfolio}>
-                                        <Grid 
-                                            container 
-                                            className={classes.infoProjectHover_Portfolio} 
-                                            direction='column' 
-                                            justifyContent='center' 
-                                            alignItems='center' 
-                                        >
-                                            <Typography variant='subtitle2'>
-                                                HowRU
-                                            </Typography>
-                                            
-                                            <Typography className={classes.viewProjectHover_Portfolio} variant='caption'>
-                                                View Project
-                                            </Typography>
-                                        </Grid>
-                                    </Box>
-                                </Box>
-                            </Box>
-                            <Grid container className={classes.projectInfoContainer_Portfolio} direction='column' justifyContent='space-between'>
-                                <Grid container direction='column'>
-                                <Typography className={`${classes.projectAppTitle_Project} text-theme`} variant='body2'>
-                                        Mental Health Application
-                                    </Typography>
-                                    <Typography className={classes.projectTitle_Project} variant='subtitle1'>
-                                        HowRU
-                                    </Typography>
-                                    <Typography className={classes.techUsed_Project} variant='caption'>
-                                        Technologies Used: 
-                                    </Typography>
-                                    <Typography className={classes.techUsedInfo_Project} variant='caption'>
-                                        React, Material-UI, MongoDB, Express, JavaScript, AJAX, HTML, CSS, NodeJS
-                                    </Typography>
-                                </Grid>
-                                <Box className={classes.viewProjectContainer_Project}>
-                                    <a href='#' className={classes.viewProjectLink_Project}>
-                                        <Typography className={`${classes.viewProjectLinkTypography_Project} view-project-link`} variant='caption'>
-                                            View Project
-                                            <BsArrowUpRight className={classes.viewProjectArrow_Portfolio} />
-                                        </Typography>
-                                    </a>
-                                </Box>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                    <Grid item xs={4} className={classes.projectGridContainer_Portfolio}>
-                        <Grid 
-                            container 
-                            className={classes.projectGrid_Portfolio}
-                            direction='column' 
-                            justifyContent='center' 
-                            alignItems='center' 
-                        >
-                            <Box className={classes.imgProjectContainer_Portfolio}>
-                                <img src={RunBuddy} className={classes.imgProject_Portfolio} height='100%' width='100%' alt='' />
-                                <Box className={classes.imgHoverContainer_Portfolio}>
-                                    <Box className={classes.infoProjectHoverContainer_Portfolio}>
-                                        <Grid 
-                                            container 
-                                            className={classes.infoProjectHover_Portfolio} 
-                                            direction='column' 
-                                            justifyContent='center' 
-                                            alignItems='center' 
-                                        >
-                                            <Typography variant='subtitle2'>
-                                                Run Buddy
-                                            </Typography>
-                                            
-                                            <Typography className={classes.viewProjectHover_Portfolio} variant='caption'>
-                                                View Project
-                                            </Typography>
-                                        </Grid>
-                                    </Box>
-                                </Box>
-                            </Box>
-                            <Grid container className={classes.projectInfoContainer_Portfolio} direction='column' justifyContent='space-between'>
-                                <Grid container direction='column'>
-                                <Typography className={`${classes.projectAppTitle_Project} text-theme`} variant='body2'>
-                                        Run Buddy Landing Page
-                                    </Typography>
-                                    <Typography className={classes.projectTitle_Project} variant='subtitle1'>
-                                        Run Buddy
-                                    </Typography>
-                                    <Typography className={classes.techUsed_Project} variant='caption'>
-                                        Technologies Used: 
-                                    </Typography>
-                                    <Typography className={classes.techUsedInfo_Project} variant='caption'>
-                                        HTML, CSS
-                                    </Typography>
-                                </Grid>
-                                <Box className={classes.viewProjectContainer_Project}>
-                                    <a href='#' className={classes.viewProjectLink_Project}>
-                                        <Typography className={`${classes.viewProjectLinkTypography_Project} view-project-link`} variant='caption'>
-                                            View Project
-                                            <BsArrowUpRight className={classes.viewProjectArrow_Portfolio} />
-                                        </Typography>
-                                    </a>
-                                </Box>
-                            </Grid>
-                        </Grid>
-                    </Grid> */}
                 </Grid>
 
                 <Grid container className={classes.seeMoreContainer_Portfolio} justifyContent='center'>

@@ -24,7 +24,12 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '600',
         textShadow: `1px 1px ${theme.palette.text.primary}`
     },
-
+    modal_Project: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background:'rgba(255, 255, 255, .8)'
+    },
     sampleWorkTitleContainer_Portfolio: {
         marginBottom: '30px'
     },
@@ -33,13 +38,8 @@ const useStyles = makeStyles((theme) => ({
     },
     sampleWorkText_Portfolio: {
         textAlign: 'center', 
-        maxWidth: '50%', 
+        maxWidth: '64%', 
         marginTop: '15px'
-    },
-    projectGridContainer_Portfolio: {
-        display: 'flex',
-        justifyContent: 'center',
-        padding: theme.spacing(2)
     },
     projectGrid_Portfolio: {
         borderRadius: '15px', 
@@ -47,8 +47,7 @@ const useStyles = makeStyles((theme) => ({
         width: '100%', 
         padding: '5% 0', 
         background: 'linear-gradient(145deg,rgba(205,235,235,.3),rgba(255,255,255,.5))', 
-        boxShadow: '5px 5px 15px rgb(209,217,230),-5px -5px 15px rgb(255,255,255)',
-        maxWidth: '350px'
+        boxShadow: '5px 5px 15px rgb(209,217,230),-5px -5px 15px rgb(255,255,255)'
     },
     imgProjectContainer_Portfolio: {
         position: 'relative', 
@@ -90,7 +89,10 @@ const useStyles = makeStyles((theme) => ({
     viewProjectHover_Portfolio: {
         letterSpacing: '2px', 
         textTransform: 'uppercase', 
-        color: 'rgba(18,194,233,1)'
+        color: 'rgba(18,194,233,1)',
+        '&:hover': {
+            color: 'rgba(18,194,233,.5)'
+        }
     },
     projectInfoContainer_Portfolio: {
         width: '90%'

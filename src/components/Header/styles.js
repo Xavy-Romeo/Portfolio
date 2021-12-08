@@ -12,13 +12,8 @@ const useStyles = makeStyles((theme) => ({
         height: '80px',
         justifyContent: 'center'
     },
-    toolbar_Header: {
-        margin: '0',
-        header: '0'
-    },
     titleLink_Header:{
         textDecoration: 'none',
-       
     },
     headerTitle_Header: {
         paddingBottom: '5px',

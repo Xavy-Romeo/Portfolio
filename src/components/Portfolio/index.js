@@ -8,18 +8,10 @@ import { BsArrowUpRight } from 'react-icons/bs';
 
 import useStyles from './styles';
 import ProjectModal from '../ProjectModal';
-import TheXavyShop from '../../assets/images/the-xavy-shop.png';
-import HowRU from '../../assets/images/howru.png';
-import RunBuddy from '../../assets/images/run-buddy.png';
+import projects from '../../utils/projects';
 
 const Portfolio = () => {
     const classes = useStyles();
-
-    const projects = [
-        {name: 'The Xavy Shop', type: 'E-commerce Application', languages: 'React, Material-UI, MongoDB, Express, JavaScript, NodeJS, HTML, CSS, GraphQL', image: TheXavyShop},
-        {name: 'HowRU', type: 'Mental Health Application', languages: 'React, Material-UI, MongoDB, Express, JavaScript, AJAX, HTML, CSS, NodeJS', image: HowRU},
-        {name: 'Run Buddy', type: 'Run Buddy Landing Page', languages: 'HTML, CSS', image: RunBuddy}
-    ];
 
     const [open, setOpen] = useState(false);
   
@@ -62,12 +54,12 @@ const Portfolio = () => {
                     </Typography>
                     <Typography className={classes.sampleWorkText_Portfolio} variant='body2'>
                         Examples include my knowledge in React, JavaScript, Database implementation, internal and external API integration, 
-                        API access control, CSS, and Responsive Design.
+                        API access control, global and local state management, payment processing, CSS, and Responsive Design.
                     </Typography>
                 </Grid>                    
-                <Grid container>
+                <Grid container spacing={5}>
                     {projects.map((project, index) => (
-                        <Grid item xs={4} className={classes.projectGridContainer_Portfolio} key={index}>
+                        <Grid item xs={4} key={index}>
                             <Grid 
                                 container 
                                 className={classes.projectGrid_Portfolio}
@@ -79,7 +71,7 @@ const Portfolio = () => {
                                     onClick={() => handleOpen(project)}
                                     className={classes.imgProjectContainer_Portfolio}
                                 >
-                                    <img src={project.image} className={classes.imgProject_Portfolio} height='100%' width='100%' alt='' />
+                                    <img src={project.image} className={classes.imgProject_Portfolio} height='100%' width='100%' alt={project.name} />
                                     <Box className={classes.imgHoverContainer_Portfolio}>
                                         <Box className={classes.infoProjectHoverContainer_Portfolio}>
                                             <Grid 

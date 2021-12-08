@@ -14,7 +14,7 @@
 
 /* text theme */
 .text-theme {
-  background: linear-gradient(to right, #12c2e9, #f64f59, #f64f59);
+  background: linear-gradient(to right, rgb(18,194,233), rgb(246,79,89), rgb(246,79,89));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
@@ -51,7 +51,7 @@
   left: 0;
   right: auto;
   width: 100%;
-  background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+  background-image: linear-gradient(to left, rgb(18,194,233), rgb(196,113,237), rgb(246,79,89));
 }
 
 .nav-link-span:after,
@@ -99,7 +99,7 @@
 .view-project-link:hover::after {
   width: 100%;
   height: 100%;
-  border-image: radial-gradient(#f64f59, #12c2e9, #f64f59) 1;
+  border-image: radial-gradient(rgb(246,79,89), rgb(18,194,233), rgb(246,79,89)) 1;
 }
 
 .say-hi-link:hover {

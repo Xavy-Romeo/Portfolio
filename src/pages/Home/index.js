@@ -5,6 +5,7 @@ import Top from '../../components/Top';
 import About from '../../components/About';
 import Portfolio from '../../components/Portfolio';
 import Resume from '../../components/Resume';
+import Contact from '../../components/Contact';
 
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
@@ -23,17 +24,8 @@ const Home = () => {
                     <About />
                     <Portfolio />
                     <Resume />
+                    <Contact />
                 </Container>
-
-
-
-
-
-
-                
-                <section id="contact">
-                    <Box style={{height: '100vh', background: 'orange'}} />
-                </section> 
             </main>
 
             <Box className={classes.rightEffects_Home} />

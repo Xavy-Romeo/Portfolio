@@ -117,7 +117,8 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '20px'
     },
     viewProjectLink_Project: {
-        textDecoration: 'none',         
+        textDecoration: 'none',
+        cursor: 'pointer'         
     },
     viewProjectLinkTypography_Project: {
         color: theme.palette.text.primary, 

@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import Top from '../../components/Top';
 import About from '../../components/About';
 import Portfolio from '../../components/Portfolio';
+import Resume from '../../components/Resume';
 
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
@@ -21,6 +22,7 @@ const Home = () => {
                     <Top />
                     <About />
                     <Portfolio />
+                    <Resume />
                 </Container>
 
 
@@ -28,9 +30,7 @@ const Home = () => {
 
 
 
-                <section id="resume">
-                    <Box style={{height: '100vh', background: 'green'}} />
-                </section> 
+                
                 <section id="contact">
                     <Box style={{height: '100vh', background: 'orange'}} />
                 </section> 

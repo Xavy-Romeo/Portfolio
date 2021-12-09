@@ -1,5 +1,3 @@
-
-
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
@@ -8,7 +6,6 @@ import { FiDownload } from 'react-icons/fi';
 import useStyles from './styles';
 import ResumeImg from '../../assets/images/resume.png';
 import ResumePdf from '../../assets/files/resume.pdf';
-
 
 const Resume = () => {
     const classes = useStyles();

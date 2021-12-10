@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
         height: '100%', 
         width: '100%', 
         padding: '5% 0', 
-        background: 'linear-gradient(145deg,rgba(205,235,235,.3),rgba(255,255,255,.5))', 
+        background: 'linear-gradient(145deg,rgb(225,235,235),rgb(255,255,255))', 
         boxShadow: '5px 5px 15px rgb(209,217,230),-5px -5px 15px rgb(255,255,255)'
     },
     imgProjectContainer_Portfolio: {

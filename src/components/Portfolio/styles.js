@@ -138,7 +138,10 @@ const useStyles = makeStyles((theme) => ({
     seeMoreHereLink_Portfolio: {
         textDecoration: 'none', 
         marginLeft: '4px', 
-        color: 'rgb(110,110,110)'
+        color: 'rgb(246,79,89)',
+        '&:hover': {
+            opacity: '.7'
+        }
     }
 }));
 

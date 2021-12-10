@@ -30,8 +30,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center'
     },
     aboutText_About: {
-        marginBottom: '10px', 
-        letterSpacing: '1.25px',
+        marginBottom: '10px',
         width: '65%',
         textAlign: 'center'
     },

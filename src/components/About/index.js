@@ -46,7 +46,7 @@ const About = () => {
                 </Typography>
             </Grid>
             <Box className={classes.aboutTextContainer_About}>
-                <Typography className={classes.aboutText_About} variant='body2'>
+                <Typography className={classes.aboutText_About} variant='body1'>
                     <span className={classes.aboutTextSpan_About}> I am Xavy Romeo, a Full Stack Software Engineer </span>
                     with a degree in Business Economics from UC Irvine and a 
                     Full Stack Web Development certificate from UCLA
@@ -99,7 +99,7 @@ const About = () => {
                                                 />
                                             </Box>
                                             <Box>
-                                                <Typography className={classes.skillName_About} variant='caption1'>
+                                                <Typography className={classes.skillName_About} variant='caption'>
                                                     {skill.name}
                                                 </Typography>
                                             </Box>

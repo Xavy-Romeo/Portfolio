@@ -2,11 +2,29 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({ 
     mainModalContainer_ProjectModal: {
+        position: 'relative'
+    },
+    modalContainer_ProjectModal: {
+        position: 'relative',
         borderRadius: '5px',
         padding: '50px 80px',
-        background: 'linear-gradient(145deg,rgba(205,235,235,1),rgba(255,255,255,1))', 
+        background: 'linear-gradient(145deg,rgb(225,235,235),rgb(255,255,255))', 
         boxShadow: theme.shadows[10],
         width: '1200px'
+    },
+    closeModalButton_ProjectModal: {
+        position: 'absolute',
+        right: '2%',
+        top: '2%',
+        zIndex: '999999999999999999'
+    },
+    closeIcon_ProjectModal: {
+        fontSize: '30px',
+        transition: 'all .2s ease-in-out',
+        cursor: 'pointer',
+        '&:hover': {
+            color: 'rgb(246,79,89)'
+        }
     },
     projectTitle_ProjectModal: {
         fontWeight: '600',
@@ -28,6 +46,9 @@ const useStyles = makeStyles((theme) => ({
         position: 'absolute',
         top: 0,
         left: 0,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
         background: 'rgba(0,0,0,.2)',
         height: '100%',
         width: '100%',
@@ -36,6 +57,22 @@ const useStyles = makeStyles((theme) => ({
         '&:hover': {
             opacity: 1
         }
+    },
+    hoverText_ProjectModal: {
+        background: 'rgba(0,0,0,.7)', 
+        color: 'rgba(255,255,255,.9)',
+        display: 'flex',
+        alignItems: 'center',
+        borderRadius: '5px',
+        '&:hover': {
+            color: 'rgb(246,79,89)'
+        }
+    },
+    rocketMarginRight_ProjectModal: {
+        marginRight: '10px'
+    },
+    rocketMarginLeft_ProjectModal: {
+        marginLeft: '10px'
     },
     infoContainer_ProjectModal: {
         height: '100%'
@@ -59,12 +96,12 @@ const useStyles = makeStyles((theme) => ({
     },
     launchLink_ProjectModal: {
         textDecoration: 'none',
-        color: 'rgb(120,0,220)'
+        color: 'rgb(246,79,89)'
     },
     githubLink_ProjectModal: {
         textDecoration: 'none',
         marginLeft: '40px',
-        color: 'rgb(120,0,220)'
+        color: 'rgb(246,79,89)'
     },
     linkTypography_ProjectModal: {
         textTransform: 'uppercase',

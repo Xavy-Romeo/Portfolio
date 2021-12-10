@@ -14,7 +14,8 @@ const Nav = () => {
         {name: 'About Me', href: '#about'},
         {name: 'Portfolio', href: '#portfolio'},
         // {name: 'Resume', href: '#resume'},
-        {name: 'Contact Me', href: '#contact'},
+        {name: 'Testimonials', href: '#testimonials'},
+        {name: 'Contact Me', href: '#contact'}
     ];
 
     const setActiveSection = () => {

@@ -6,6 +6,7 @@ import Top from '../../components/Top';
 import About from '../../components/About';
 import Portfolio from '../../components/Portfolio';
 // import Resume from '../../components/Resume';
+import Testimonials from '../../components/Testimonials';
 import Contact from '../../components/Contact';
 
 import Container from '@material-ui/core/Container';
@@ -24,6 +25,7 @@ const Home = () => {
                     <About />
                     <Portfolio />
                     {/* <Resume /> */}
+                    <Testimonials />
                     <Contact />
                 </Container>
             </main>

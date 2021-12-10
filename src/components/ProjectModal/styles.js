@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative',
         borderRadius: '5px',
         padding: '50px 80px',
-        background: 'linear-gradient(145deg,rgb(225,235,235),rgb(255,255,255))', 
+        background: 'linear-gradient(145deg,rgb(225,235,235),rgb(245,255,255))', 
         boxShadow: theme.shadows[10],
         width: '1200px'
     },
@@ -64,6 +64,10 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         borderRadius: '5px',
+        textTransform: 'uppercase',
+        fontWeight: '600',
+        letterSpacing: '1.5px',
+        padding: '10px',
         '&:hover': {
             color: 'rgb(246,79,89)'
         }

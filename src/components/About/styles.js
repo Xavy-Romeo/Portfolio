@@ -24,7 +24,18 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '600',
         textShadow: `1px 1px ${theme.palette.text.primary}`
     },
-    bold_About: {
+    aboutTextContainer_About: {
+        marginBottom: '50px',
+        display: 'flex',
+        justifyContent: 'center'
+    },
+    aboutText_About: {
+        marginBottom: '10px', 
+        letterSpacing: '1.25px',
+        width: '65%',
+        textAlign: 'center'
+    },
+    aboutTextSpan_About: {
         fontWeight: '600'
     },
     profileImgContainer_About: {
@@ -72,12 +83,36 @@ const useStyles = makeStyles((theme) => ({
             color: 'rgb(246,79,89)'
         }
     },
-    aboutTextContainer_About: {
-        marginBottom: '50px'
+    mySkillsTitle_About: {
+        fontWeight: '600', 
+        textShadow: `1px 1px ${theme.palette.text.primary}`,
+        marginBottom: '10px'
     },
-    aboutText_About: {
-        marginBottom: '10px', 
-        letterSpacing: '1.25px'
+    skillContainer_About: {
+        padding: '10px 0'
+    },
+    skillName_About: {
+        textTransform: 'uppercase'
+    },
+    downloadContainer_About: {
+        display: 'flex', 
+        justifyContent: 'center'
+    },
+    downloadResumeLink_About: {
+        display: 'flex', 
+        alignItems: 'center', 
+        margin: '40px 0', 
+        padding: '5px',
+        cursor: 'pointer',
+        textDecoration: 'none',
+        color: 'rgb(246,79,89)'
+    },
+    downloadResume_About: {
+        textTransform: 'uppercase',
+        fontWeight: '600'
+    },
+    downloadIcon_About: {
+        marginLeft: '7px'
     },
     experienceContainer_About: {
         marginBottom: '50px'
@@ -97,33 +132,6 @@ const useStyles = makeStyles((theme) => ({
     },
     positionTitle_About: {
         fontWeight: '500'
-    },
-    downloadResumeLink_About: {
-        display: 'flex', 
-        alignItems: 'center', 
-        marginTop: '20px', 
-        padding: '5px',
-        cursor: 'pointer',
-        textDecoration: 'none',
-        color: theme.palette.text.primary
-    },
-    downloadResume_About: {
-        textTransform: 'uppercase',
-        fontWeight: '600'
-    },
-    downloadIcon_About: {
-        marginLeft: '5px'
-    },
-    mySkillsTitle_About: {
-        marginTop: '20px', 
-        fontWeight: '600', 
-        textShadow: `1px 1px ${theme.palette.text.primary}`
-    },
-    skillContainer_About: {
-        padding: '10px 0'
-    },
-    skillName_About: {
-        textTransform: 'uppercase'
     }
 }));
 

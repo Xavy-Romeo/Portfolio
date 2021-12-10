@@ -13,7 +13,7 @@ const Nav = () => {
         {name: 'Home', href: '#home'},
         {name: 'About Me', href: '#about'},
         {name: 'Portfolio', href: '#portfolio'},
-        {name: 'Resume', href: '#resume'},
+        // {name: 'Resume', href: '#resume'},
         {name: 'Contact Me', href: '#contact'},
     ];
 

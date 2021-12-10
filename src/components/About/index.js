@@ -45,7 +45,15 @@ const About = () => {
                     Know Me More
                 </Typography>
             </Grid>
-            <Grid container spacing={5}>
+            <Box className={classes.aboutTextContainer_About}>
+                <Typography className={classes.aboutText_About} variant='body2'>
+                    <span className={classes.aboutTextSpan_About}> I am Xavy Romeo, a Full Stack Software Engineer </span>
+                    with a degree in Business Economics from UC Irvine and a 
+                    Full Stack Web Development certificate from UCLA
+                    Extension Boot Camps. I can help visions and ideas come to life.                             
+                </Typography>   
+            </Box>
+            <Grid container spacing={2}>
                 <Grid item xs={5}>
                     <Box className={classes.profileImgContainer_About}>
                         <img src={Profile2} className={classes.profileImg_About} height='100%' alt='Xavy Smiling!'/>
@@ -73,15 +81,48 @@ const About = () => {
                     </Grid>
                 </Grid>
                 <Grid item xs={7}>
-                    <Box className={classes.aboutTextContainer_About}>
-                        <Typography className={classes.aboutText_About} variant='body2'>
-                            <span className={classes.bold_About}> I am Xavy Romeo, a Full Stack Software Engineer </span>
-                            with a degree in Business Economics from UC Irvine and a 
-                            Full Stack Web Development certificate from UCLA
-                            Extension Boot Camps. I can help visions and ideas come to life.                             
-                        </Typography>   
-                    </Box>
                     <Grid container direction='column'>
+                        <Grid container direction='column' alignItems='center'>
+                            <Typography className={`${classes.mySkillsTitle_About} text-theme`} variant='h5'>
+                                My Skills
+                            </Typography>
+                            <Grid container className={`skills-bar-container`}>
+                                {skills.map((skill, index) => (
+                                    <Grid item xs={2} key={index}>
+                                        <Grid container className={classes.skillContainer_About} direction='column' alignItems='center'>
+                                            <Box >
+                                                <img 
+                                                    src={skill.image} 
+                                                    height='100%'
+                                                    width='100%'
+                                                    alt={skill.name} 
+                                                />
+                                            </Box>
+                                            <Box>
+                                                <Typography className={classes.skillName_About} variant='caption1'>
+                                                    {skill.name}
+                                                </Typography>
+                                            </Box>
+                                        </Grid>
+                                    </Grid>
+                                ))}
+                            </Grid>
+                        </Grid>
+                        <Box className={`${classes.downloadContainer_About} blink`}>
+                            <Box>
+                                <a 
+                                    download='Resume - Javier Romeo Vazquez'
+                                    href={ResumePdf}
+                                    className={`${classes.downloadResumeLink_About} view-project-link`}
+                                    aria-label='download resume button'
+                                >
+                                    <Typography className={classes.downloadResume_About} variant='body2'>
+                                        Download My Resume
+                                        <FiDownload className={classes.downloadIcon_About} />
+                                    </Typography>
+                                </a>
+                            </Box>
+                        </Box>    
                         <Grid container className={classes.experienceContainer_About}>
                             <Grid item xs={6}>
                                 <Grid container direction='column'>
@@ -156,45 +197,6 @@ const About = () => {
                                 </Grid>
                             </Grid>
                         </Grid>
-                        <Grid container direction='column' alignItems='center'>
-                            <Typography className={`${classes.mySkillsTitle_About} text-theme`} variant='h5'>
-                                My Skills
-                            </Typography>
-                            <Grid container className={`skills-bar-container`}>
-                                {skills.map((skill, index) => (
-                                    <Grid item xs={2} key={index}>
-                                        <Grid container className={classes.skillContainer_About} direction='column' alignItems='center'>
-                                            <Box >
-                                                <img 
-                                                    src={skill.image} 
-                                                    height='100%'
-                                                    width='100%'
-                                                    alt={skill.name} 
-                                                />
-                                            </Box>
-                                            <Box>
-                                                <Typography className={classes.skillName_About} variant='caption1'>
-                                                    {skill.name}
-                                                </Typography>
-                                            </Box>
-                                        </Grid>
-                                    </Grid>
-                                ))}
-                            </Grid>
-                        </Grid>
-                        <Box className={`blink`} style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-                            <a 
-                                download='Resume - Javier Romeo Vazquez'
-                                href={ResumePdf}
-                                className={`${classes.downloadResumeLink_About} view-project-link`}
-                                aria-label='download resume button'
-                            >
-                                <Typography className={classes.downloadResume_About} variant='body2'>
-                                    Download My Resume
-                                    <FiDownload className={classes.downloadIcon_about} />
-                                </Typography>
-                            </a>
-                        </Box>      
                     </Grid>
                 </Grid>
             </Grid>

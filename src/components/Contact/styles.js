@@ -25,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
         textShadow: `1px 1px ${theme.palette.text.primary}`
     },
     contactContainer_Contact: {
-        position: 'relative'
+        position: 'relative',
+        marginBottom: '50px'
     },
     contactImg_Contact: {
         objectFit: 'cover',

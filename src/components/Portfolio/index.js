@@ -123,9 +123,14 @@ const Portfolio = () => {
 
                 <Grid container className={classes.seeMoreContainer_Portfolio} justifyContent='center'>
                     <Typography variant='body2'>
-                        Want to see More??? Visit my GitHub 
-                        <a href='#' className={classes.seeMoreHereLink_Portfolio}>
-                            Here
+                        Want to see More??? Visit my  
+                        <a 
+                            href='https://github.com/Xavy-Romeo' 
+                            target='_blank' 
+                            rel='noopener noreferrer' 
+                            className={classes.seeMoreHereLink_Portfolio}
+                        >
+                            GitHub
                         </a>
                     </Typography>
                 </Grid>

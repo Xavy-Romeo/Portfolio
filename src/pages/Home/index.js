@@ -5,7 +5,7 @@ import Footer from '../../components/Footer';
 import Top from '../../components/Top';
 import About from '../../components/About';
 import Portfolio from '../../components/Portfolio';
-import Resume from '../../components/Resume';
+// import Resume from '../../components/Resume';
 import Contact from '../../components/Contact';
 
 import Container from '@material-ui/core/Container';
@@ -23,7 +23,7 @@ const Home = () => {
                     <Top />
                     <About />
                     <Portfolio />
-                    <Resume />
+                    {/* <Resume /> */}
                     <Contact />
                 </Container>
             </main>

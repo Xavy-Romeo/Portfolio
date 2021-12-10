@@ -130,29 +130,7 @@
 }
 /* end section styles */
 
-/* animations */
-.fade-out-page{
-  animation: fade-out 2s;
-}
-
-.fade-out {
-  animation: fade-out 1s;
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;;
-  }
-}
-
-/* end animations */
-
+/* skills bar styles */
 .skills-bar-container {
   position: relative;
 }
@@ -175,3 +153,43 @@
   mask: 'none';
   position: 'relative';
 }
+/* end skills bar styles */
+
+/* animations */
+.fade-out-page{
+  animation: fade-out 2s;
+}
+
+.fade-out {
+  animation: fade-out 1s;
+}
+
+.blink {
+  animation: blink 2s linear infinite;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* end animations */

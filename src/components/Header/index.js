@@ -4,10 +4,10 @@ import AppBar from '@material-ui/core/AppBar';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
 
 import useStyles from './styles';
 import Nav from '../Nav';
-import { Typography } from '@material-ui/core';
 
 const Header = () => {
     const classes = useStyles();

@@ -1,6 +1,7 @@
 import useStyles from './styles';
 import Loader from '../../components/Loader'; 
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import Top from '../../components/Top';
 import About from '../../components/About';
 import Portfolio from '../../components/Portfolio';
@@ -17,7 +18,6 @@ const Home = () => {
         <>
             <Loader />
             <Header />
-        
             <main >
                 <Container maxWidth='xl'>
                     <Top />
@@ -27,6 +27,7 @@ const Home = () => {
                     <Contact />
                 </Container>
             </main>
+            <Footer />
 
             <Box className={classes.rightEffects_Home} />
             <Box className={classes.leftEffects_Home} />

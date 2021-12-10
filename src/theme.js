@@ -6,7 +6,7 @@ const theme = createTheme({
             primary: 'rgb(40,40,40)'
         },
         background: {
-            default: 'rgb(220, 235, 235)'
+            default: 'rgb(245, 255, 255)'
         },
     },
     typography: {
@@ -90,7 +90,7 @@ const theme = createTheme({
             sm: 600,
             md: 960,
             lg: 1280,
-            xl: 1600,
+            xl: 1400,
             wide: 1920
         }
     },

@@ -54,7 +54,7 @@ const Contact = () => {
                                 Message:
                             </Typography>
                             <textarea 
-                                className={classes.contactFromInputs_Contact} 
+                                className={`${classes.contactFromInputs_Contact} ${classes.textArea_Contact}`} 
                                 placeholder='Your Message Here' 
                                 rows='5'
                                 required

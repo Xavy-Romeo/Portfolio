@@ -15,6 +15,21 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
         textTransform: 'uppercase',
         letterSpacing: '2px',
+        '@media (max-width:750px)': {
+            fontSize: '80px',
+        },
+        '@media (max-width:500px)': {
+            fontSize: '60px',
+        },
+        '@media (max-width:400px)': {
+            fontSize: '50px',
+        },
+        '@media (max-width:335px)': {
+            fontSize: '44px',
+        },
+        '@media (max-width:300px)': {
+            fontSize: '36px',
+        }
     },
     sectionTitle: {
         position: 'absolute',
@@ -22,7 +37,19 @@ const useStyles = makeStyles((theme) => ({
         left: '50%',
         transform: 'translate(-50%, -30%)',
         fontWeight: '600',
-        textShadow: `1px 1px ${theme.palette.text.primary}`
+        textShadow: `1px 1px ${theme.palette.text.primary}`,
+        '@media (max-width:550px)': {
+            fontSize: '30px',
+        },
+        '@media (max-width:475px)': {
+            fontSize: '24px',
+        },
+        '@media (max-width:400px)': {
+            fontSize: '20px',
+        },
+        '@media (max-width:330px)': {
+            fontSize: '16px',
+        }
     },
     modal_Project: {
         display: 'flex',
@@ -34,12 +61,24 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: '30px'
     },
     sampleWorkTitle_Portfolio: {
-        fontWeight: '600'
+        fontWeight: '600',
+        '@media (max-width:430px)': {
+            fontSize: '20px'
+        },
+        '@media (max-width:325px)': {
+            fontSize: '16px'
+        },
     },
     sampleWorkText_Portfolio: {
         textAlign: 'center', 
-        maxWidth: '64%', 
-        marginTop: '15px'
+        width: '64%', 
+        marginTop: '15px',
+        '@media (max-width:959px)': {
+            width: '100%',
+        },
+        '@media (max-width:599px)': {
+            textAlign: 'start',
+        },
     },
     projectGrid_Portfolio: {
         borderRadius: '15px', 
@@ -110,7 +149,10 @@ const useStyles = makeStyles((theme) => ({
     },
     techUsedInfo_Project: {
         color: 'rgba(40,40,40,.7)', 
-        height: '60px'
+        height: '60px',
+        '@media (max-width:959px)': {
+            fontSize: '12px',
+        },
     },
     viewProjectContainer_Project: {
         display: 'flex', 

@@ -7,7 +7,10 @@ const useStyles = makeStyles((theme) => ({
     },
     linksContainer_Footer:{
         marginRight: '50px',
-        paddingTop: '5px'
+        paddingTop: '5px',
+        '@media (max-width:350px)': {
+            marginRight: '0'
+        },
     },
     icon_Footer: {
         fontSize: '50px',

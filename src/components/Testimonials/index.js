@@ -19,7 +19,7 @@ const Testimonials = () => {
                 </Typography>
             </Grid>
             <Grid container justifyContent='space-between' spacing={5} >
-                <Grid item xs={6}>
+                <Grid item xs={12} lg={6}>
                     <Grid container className={classes.testimonialContainer_Testimonials}>
                         <FaQuoteLeft className={classes.quoteIcon_Testimonials} />
                         <Typography className={classes.quoteText_Testimonials} variant='caption'>
@@ -46,7 +46,7 @@ const Testimonials = () => {
                         </Box>
                     </Grid>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} lg={6}>
                     <Grid container className={classes.testimonialContainer_Testimonials}>
                         <FaQuoteLeft className={classes.quoteIcon_Testimonials} /> 
                         <Typography className={classes.quoteText_Testimonials} variant='caption'>

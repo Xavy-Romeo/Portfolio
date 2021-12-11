@@ -34,12 +34,24 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: '30px'
     },
     sampleWorkTitle_Portfolio: {
-        fontWeight: '600'
+        fontWeight: '600',
+        '@media (max-width:430px)': {
+            fontSize: '20px'
+        },
+        '@media (max-width:325px)': {
+            fontSize: '16px'
+        },
     },
     sampleWorkText_Portfolio: {
         textAlign: 'center', 
-        maxWidth: '64%', 
-        marginTop: '15px'
+        width: '64%', 
+        marginTop: '15px',
+        '@media (max-width:959px)': {
+            width: '100%',
+        },
+        '@media (max-width:599px)': {
+            textAlign: 'start',
+        },
     },
     projectGrid_Portfolio: {
         borderRadius: '15px', 
@@ -110,7 +122,10 @@ const useStyles = makeStyles((theme) => ({
     },
     techUsedInfo_Project: {
         color: 'rgba(40,40,40,.7)', 
-        height: '60px'
+        height: '60px',
+        '@media (max-width:959px)': {
+            fontSize: '12px',
+        },
     },
     viewProjectContainer_Project: {
         display: 'flex', 

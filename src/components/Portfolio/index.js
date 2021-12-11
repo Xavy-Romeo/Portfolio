@@ -59,7 +59,7 @@ const Portfolio = () => {
                 </Grid>                    
                 <Grid container spacing={5}>
                     {projects.map((project, index) => (
-                        <Grid item xs={4} key={index}>
+                        <Grid item xs={12} sm={6} lg={3} key={index}>
                             <Grid 
                                 container 
                                 className={classes.projectGrid_Portfolio}

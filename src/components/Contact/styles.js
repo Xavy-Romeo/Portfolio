@@ -42,7 +42,16 @@ const useStyles = makeStyles((theme) => ({
         background: 'rgba(255,255,255,.2)', 
         borderRadius: '5px',
         minHeight: '500px',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        '@media (max-width:1150px)': {
+            height: '90%',
+            top: '5%',
+        },
+        '@media (max-width:850px)': {
+            background: 'rgba(255,255,255,.8)', 
+            left: '5%',
+            width: '90%', 
+        }
     },
     contactForm_Contact: {
         width: '90%',
@@ -53,7 +62,15 @@ const useStyles = makeStyles((theme) => ({
         textShadow: '1px 1px 3px black',
         color: 'rgba(255,255,255,.9)',
         textTransform: 'uppercase',
-        letterSpacing: '1.25px'
+        letterSpacing: '1.25px',
+        '@media (max-width:850px)': {
+            textShadow: 'none',
+            color: 'rgba(0,0,0,.9)',
+            fontWeight: '600' 
+        },
+        '@media (max-width:380px)': {
+            marginBottom: '0',
+        },
     },
     contactFromInputs_Contact: {
         minHeight: '20px',
@@ -73,6 +90,14 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor: 'rgba(255,255,255,.8)',
             outline: 'none',
         },
+        '@media (max-width:380px)': {
+            width: '100%', 
+        },
+    },
+    textArea_Contact: {
+        '@media (max-width:850px)': {
+            height: '300px' 
+        },
     },
     sendMessage_Contact: {
         display: 'flex',
@@ -85,7 +110,12 @@ const useStyles = makeStyles((theme) => ({
         '&:hover': {
             color: 'rgba(18,194,233,.8)',
             cursor: 'pointer'
-        }
+        },
+        '@media (max-width:850px)': {
+            textShadow: 'none',
+            color: 'rgba(0,0,0,.9)',
+            fontWeight: '600' 
+        },
     },
     sendIcon_Contact: {
         marginLeft: '7px',

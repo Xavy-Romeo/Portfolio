@@ -124,7 +124,7 @@ const About = () => {
                             </Box>
                         </Box>    
                         <Grid container className={classes.experienceContainer_About}>
-                            <Grid item xs={12} sm={6}>
+                            <Grid item xs={6}>
                                 <Grid container direction='column'>
                                     <Typography className={classes.aboutTitles_About} variant='subtitle1'>
                                         Education
@@ -160,7 +160,7 @@ const About = () => {
                                     </Grid>
                                 </Grid>
                             </Grid>
-                            <Grid item xs={12} sm={6}>
+                            <Grid item xs={6}>
                                 <Grid container direction='column'>
                                     <Typography className={classes.aboutTitles_About} variant='subtitle1'>
                                         Work Experience

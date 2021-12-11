@@ -54,7 +54,7 @@ const About = () => {
                 </Typography>   
             </Box>
             <Grid container spacing={2}>
-                <Grid item xs={5}>
+                <Grid item className={classes.imgSection_About} xs={12} lg={5}>
                     <Box className={classes.profileImgContainer_About}>
                         <img src={Profile2} className={classes.profileImg_About} height='100%' alt='Xavy Smiling!'/>
                     </Box>
@@ -80,7 +80,7 @@ const About = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item xs={7}>
+                <Grid item xs={12} lg={7}>
                     <Grid container direction='column'>
                         <Grid container direction='column' alignItems='center'>
                             <Typography className={`${classes.mySkillsTitle_About} text-theme`} variant='h5'>
@@ -88,7 +88,7 @@ const About = () => {
                             </Typography>
                             <Grid container className={`skills-bar-container`}>
                                 {skills.map((skill, index) => (
-                                    <Grid item xs={2} key={index}>
+                                    <Grid item xs={4} sm={2} key={index}>
                                         <Grid container className={classes.skillContainer_About} direction='column' alignItems='center'>
                                             <Box >
                                                 <img 
@@ -124,7 +124,7 @@ const About = () => {
                             </Box>
                         </Box>    
                         <Grid container className={classes.experienceContainer_About}>
-                            <Grid item xs={6}>
+                            <Grid item xs={12} sm={6}>
                                 <Grid container direction='column'>
                                     <Typography className={classes.aboutTitles_About} variant='subtitle1'>
                                         Education
@@ -160,7 +160,7 @@ const About = () => {
                                     </Grid>
                                 </Grid>
                             </Grid>
-                            <Grid item xs={6}>
+                            <Grid item xs={12} sm={6}>
                                 <Grid container direction='column'>
                                     <Typography className={classes.aboutTitles_About} variant='subtitle1'>
                                         Work Experience

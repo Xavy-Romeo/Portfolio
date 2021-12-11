@@ -32,13 +32,23 @@ const useStyles = makeStyles((theme) => ({
     aboutText_About: {
         marginBottom: '10px',
         width: '65%',
-        textAlign: 'center'
+        textAlign: 'center',
+        '@media (max-width:599px)': {
+            width: '100%',
+        },
     },
     aboutTextSpan_About: {
         fontWeight: '600'
     },
     profileImgContainer_About: {
-        height: '400px'
+        height: '400px',
+        '@media (max-width:1279px)': {
+            display: 'flex',
+            justifyContent: 'center'
+        },
+        '@media (max-width:500px)': {
+            height: '300px'
+        },
     },
     profileImg_About: {
         borderRadius: '50%',
@@ -46,7 +56,10 @@ const useStyles = makeStyles((theme) => ({
     },
     linkContainer_About: {
         width: '400px', 
-        margin: '25px 0'
+        margin: '25px 0',
+        '@media (max-width:1279px)': {
+            width: '100%'
+        },
     },
     emailContainer_About: {
         display: 'flex', 

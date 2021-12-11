@@ -15,6 +15,21 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
         textTransform: 'uppercase',
         letterSpacing: '2px',
+        '@media (max-width:750px)': {
+            fontSize: '80px',
+        },
+        '@media (max-width:500px)': {
+            fontSize: '60px',
+        },
+        '@media (max-width:400px)': {
+            fontSize: '50px',
+        },
+        '@media (max-width:335px)': {
+            fontSize: '44px',
+        },
+        '@media (max-width:300px)': {
+            fontSize: '36px',
+        }
     },
     sectionTitle: {
         position: 'absolute',
@@ -22,7 +37,19 @@ const useStyles = makeStyles((theme) => ({
         left: '50%',
         transform: 'translate(-50%, -30%)',
         fontWeight: '600',
-        textShadow: `1px 1px ${theme.palette.text.primary}`
+        textShadow: `1px 1px ${theme.palette.text.primary}`,
+        '@media (max-width:550px)': {
+            fontSize: '30px',
+        },
+        '@media (max-width:475px)': {
+            fontSize: '24px',
+        },
+        '@media (max-width:400px)': {
+            fontSize: '20px',
+        },
+        '@media (max-width:330px)': {
+            fontSize: '16px',
+        }
     },
     aboutTextContainer_About: {
         marginBottom: '50px',
@@ -35,10 +62,17 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         '@media (max-width:599px)': {
             width: '100%',
+            textAlign: 'start'
         },
+        '@media (max-width:330px)': {
+            fontSize: '14px',
+        }
     },
     aboutTextSpan_About: {
-        fontWeight: '600'
+        fontWeight: '600',
+        '@media (max-width:330px)': {
+            fontSize: '14px',
+        }
     },
     profileImgContainer_About: {
         height: '400px',
@@ -49,6 +83,9 @@ const useStyles = makeStyles((theme) => ({
         '@media (max-width:500px)': {
             height: '300px'
         },
+        '@media (max-width:330px)': {
+            height: '240px'
+        }
     },
     profileImg_About: {
         borderRadius: '50%',
@@ -70,14 +107,21 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.text.primary,
         '&:hover': {
             color: 'rgb(246,79,89)'
-        }
+        },
+        '@media (max-width:330px)': {
+            flexDirection: 'column',
+            alignItems: 'center'
+        },
     },
     emailTitle_About: {
         display: 'flex', 
         alignItems: 'center', 
         marginRight: '10px', 
         letterSpacing: '1.25px', 
-        textTransform: 'uppercase'
+        textTransform: 'uppercase',
+        '@media (max-width:330px)': {
+            marginRight: '0',
+        },
     },
     emailIcon_About: {
         marginRight: '5px'

@@ -15,6 +15,21 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
         textTransform: 'uppercase',
         letterSpacing: '2px',
+        '@media (max-width:750px)': {
+            fontSize: '80px',
+        },
+        '@media (max-width:500px)': {
+            fontSize: '60px',
+        },
+        '@media (max-width:400px)': {
+            fontSize: '50px',
+        },
+        '@media (max-width:335px)': {
+            fontSize: '44px',
+        },
+        '@media (max-width:300px)': {
+            fontSize: '36px',
+        }
     },
     sectionTitle: {
         position: 'absolute',
@@ -22,7 +37,19 @@ const useStyles = makeStyles((theme) => ({
         left: '50%',
         transform: 'translate(-50%, -30%)',
         fontWeight: '600',
-        textShadow: `1px 1px ${theme.palette.text.primary}`
+        textShadow: `1px 1px ${theme.palette.text.primary}`,
+        '@media (max-width:550px)': {
+            fontSize: '30px',
+        },
+        '@media (max-width:475px)': {
+            fontSize: '24px',
+        },
+        '@media (max-width:400px)': {
+            fontSize: '20px',
+        },
+        '@media (max-width:330px)': {
+            fontSize: '16px',
+        }
     },
     contactContainer_Contact: {
         position: 'relative',

@@ -13,7 +13,7 @@ const Top = () => {
     return (
         <section className={classes.topSection_Top} id='home'>
             <Grid container className={classes.mainGrid_Top} justifyContent='space-between' alignItems='center'>
-                <Grid item className={classes.infoGrid_Top} xs={7}>
+                <Grid item className={classes.infoGrid_Top} xs={12} md={7}>
                     <Grid container direction='column' justifyContent='center'>
                         <Typography className={classes.welcome_Top} variant='subtitle2'>
                             Welcome
@@ -38,8 +38,8 @@ const Top = () => {
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid item className={classes.imageGrid_Top}xs={5}>
-                    <Grid container alignItems='center' justifyContent='flex-end'>
+                <Grid item className={classes.imageGrid_Top} xs={12} md={5}>
+                    <Grid container className={classes.imageContainer_Top} alignItems='center' justifyContent='flex-end'>
                         <Box className={classes.imageDiv_Top}>
                            <img 
                                 src={ProfilePic}

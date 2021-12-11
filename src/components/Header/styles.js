@@ -24,14 +24,24 @@ const useStyles = makeStyles((theme) => ({
         '&:hover': {
             textShadow: '3px 3px rgb(40,40,40)',
             transition: '.3s'
+        },
+        '@media (max-width:350px)': {
+            fontSize: '34px',
+        },
+        '@media (max-width:305px)': {
+            fontSize: '30px',
         }
     },
     navContainer_Header: {
         display: 'flex', 
         justifyContent: 'flex-end',
-        paddingRight: '50px'
+        paddingRight: '5px'
     },
-    hireMeBtnLink_Header:{
+    hireMeBtnContainer_Header:{
+        display: 'flex', 
+        justifyContent: 'flex-end'
+    },
+    hireMeBtnLink_Header: {
         textDecoration: 'none'
     },
     hireMeBtn_Header: {

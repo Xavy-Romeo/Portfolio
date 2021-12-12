@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
         height: '100vh',
         width: '100%',
         display: 'flex',
-        justifyContent:'center'
+        justifyContent:'center',
+        alignItems: 'center'
     },
     loadingTitle_Loader: {
         fontSize: '4rem',
@@ -29,10 +30,16 @@ const useStyles = makeStyles((theme) => ({
         color: 'rgb(255, 35, 35)',
         fontWeight: 'bold',
         textShadow: '4px 3px rgb(200,200,200)',
-        marginBottom: '10px'
+        marginBottom: '10px',
+        '@media (max-width:500px)': {
+            fontSize: '3rem',
+        },
     },
     loadingLogo_Loader: {
         height: '200px',
+        '@media (max-width:500px)': {
+            height: '150px',
+        },
     },
     rightEffects_Loader: {
         position: 'fixed',

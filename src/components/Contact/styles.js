@@ -125,6 +125,9 @@ const useStyles = makeStyles((theme) => ({
         '@media (max-width:850px)': {
             height: '300px' 
         },
+        '@media (max-width:599px)': {
+            height: '175px' 
+        },
     },
     sendMessage_Contact: {
         display: 'flex',

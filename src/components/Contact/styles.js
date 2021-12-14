@@ -129,6 +129,10 @@ const useStyles = makeStyles((theme) => ({
             height: '175px' 
         },
     },
+    sendMessageBtn_Contact: {
+        background: 'transparent', 
+        border: 'none'
+    },
     sendMessage_Contact: {
         display: 'flex',
         alignItems: 'center',

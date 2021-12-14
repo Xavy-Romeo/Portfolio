@@ -34,6 +34,7 @@ const Testimonials = () => {
                                 src='https://media-exp1.licdn.com/dms/image/C5603AQFz5EgQChslXQ/profile-displayphoto-shrink_800_800/0/1598149946177?e=1644451200&v=beta&t=dbhxNofnJubrGhzJ41Az9u8GYjsjJB0tXDr5so6PHzk' 
                                 className={classes.img_Testimonials}
                                 height='100%'
+                                alt='Celina Profile'
                             />
                         </Box>
                         <Box className={classes.nameContainer_Testimonials}>
@@ -59,6 +60,7 @@ const Testimonials = () => {
                                 src='https://avatars.githubusercontent.com/u/78234270?v=4' 
                                 className={classes.img_Testimonials}
                                 height='100%'
+                                alt='Blaze Profile'
                             />
                         </Box>
                         <Box className={classes.nameContainer_Testimonials}>

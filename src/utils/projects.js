@@ -33,9 +33,6 @@ const projects = [
         description: `A landing page for Run Buddy. Find trainers near you to help you get the physique you want.`,
         site: 'google.com',
         github: 'https://github.com/Xavy-Romeo/run-buddy'
-    },
-    {
-        
     }
 ];
 

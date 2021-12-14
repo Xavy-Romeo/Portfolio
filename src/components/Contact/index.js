@@ -26,12 +26,12 @@ const Contact = () => {
                 <Grid container className={classes.contactFormGrid_Contact} justifyContent='center'>
                     <form 
                         className={classes.contactForm_Contact}
-                        name='contact-form'
-                        method='POST'
+                        name='contact'
+                        method='post'
                         data-netlify='true'
-                        action='/'
+                        data-netlify-honeypot='bot-field'
                     >
-                        <input type='hidden' name='form-name' value='contact-form' />
+                        <input type='hidden' name='form-name' value='contact' />
                         <Grid container direction='column'>
                             <Typography className={classes.contactFormLabel_Contact} variant='subtitle1'>
                                 Name:

@@ -24,7 +24,13 @@ const Contact = () => {
                     <img src={CodingPic} className={classes.contactImg_Contact} width='100%' alt='laptop with code' />
                 </Box>
                 <Grid container className={classes.contactFormGrid_Contact} justifyContent='center'>
-                    <form className={classes.contactForm_Contact}>
+                    <form 
+                        className={classes.contactForm_Contact}
+                        name='contact-form'
+                        method='POST'
+                        data-netlify='true'
+                        data-netlify-recaptcha='true'
+                    >
                         <Grid container direction='column'>
                             <Typography className={classes.contactFormLabel_Contact} variant='subtitle1'>
                                 Name:
@@ -61,6 +67,7 @@ const Contact = () => {
                                 name='Message'
                             />
                         </Grid>
+                        <div data-netlify-recaptcha='true' />
                         <Box>
                             <Typography className={classes.sendMessage_Contact}>
                                 Send Message

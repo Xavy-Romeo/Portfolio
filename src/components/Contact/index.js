@@ -62,10 +62,12 @@ const Contact = () => {
                             />
                         </Grid>
                         <Box>
-                            <Typography className={classes.sendMessage_Contact}>
-                                Send Message
-                                <RiSendPlaneFill className={classes.sendIcon_Contact} />
-                            </Typography>
+                            <button className={classes.sendMessageBtn_Contact} type='submit'>
+                                <Typography className={classes.sendMessage_Contact}>
+                                    Send Message
+                                    <RiSendPlaneFill className={classes.sendIcon_Contact} />
+                                </Typography>
+                            </button>
                         </Box>
                     </form>
                 </Grid>

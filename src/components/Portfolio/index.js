@@ -108,12 +108,12 @@ const Portfolio = () => {
                                         </Typography>
                                     </Grid>
                                     <Box className={classes.viewProjectContainer_Project}>
-                                        <a onClick={() => handleOpen(project)} className={classes.viewProjectLink_Project}>
+                                        <Box onClick={() => handleOpen(project)} className={classes.viewProjectLink_Project}>
                                             <Typography className={`${classes.viewProjectLinkTypography_Project} view-project-link`} variant='caption'>
                                                 View Project
                                                 <BsArrowUpRight className={classes.viewProjectArrow_Portfolio} />
                                             </Typography>
-                                        </a>
+                                        </Box>
                                     </Box>
                                 </Grid>
                             </Grid>

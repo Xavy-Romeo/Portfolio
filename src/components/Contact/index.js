@@ -29,6 +29,7 @@ const Contact = () => {
                         name='contact-form'
                         method='POST'
                         data-netlify='true'
+                        action='/'
                     >
                         <input type='hidden' name='form-name' value='contact-form' />
                         <Grid container direction='column'>

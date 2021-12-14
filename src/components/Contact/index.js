@@ -64,7 +64,7 @@ const Contact = () => {
                                 placeholder='Your Message Here' 
                                 rows='5'
                                 required
-                                name='Message'
+                                name='Message' 
                             />
                         </Grid>
                         <div data-netlify-recaptcha='true' />

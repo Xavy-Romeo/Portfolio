@@ -30,6 +30,7 @@ const Contact = () => {
                         method='POST'
                         data-netlify='true'
                     >
+                        <input type='hidden' name='form-name' value='contact-form' />
                         <Grid container direction='column'>
                             <Typography className={classes.contactFormLabel_Contact} variant='subtitle1'>
                                 Name:

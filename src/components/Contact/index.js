@@ -29,7 +29,6 @@ const Contact = () => {
                         name='contact-form'
                         method='POST'
                         data-netlify='true'
-                        data-netlify-recaptcha='true'
                     >
                         <Grid container direction='column'>
                             <Typography className={classes.contactFormLabel_Contact} variant='subtitle1'>
@@ -67,7 +66,6 @@ const Contact = () => {
                                 name='Message' 
                             />
                         </Grid>
-                        <div data-netlify-recaptcha='true' />
                         <Box>
                             <button className={classes.sendMessageBtn_Contact} type='submit'>
                                 <Typography className={classes.sendMessage_Contact}>

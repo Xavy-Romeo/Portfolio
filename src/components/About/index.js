@@ -17,6 +17,7 @@ import Js from '../../assets/images/js.svg';
 import MongoDB from '../../assets/images/mongo.svg';
 import Mui from '../../assets/images/mui.svg';
 import ReactIcon from '../../assets/images/react.svg';
+import Sass from '../../assets/images/sass.svg'
 import ResumePdf from '../../assets/files/resume.pdf';
 
 const About = () => {
@@ -27,11 +28,10 @@ const About = () => {
         {name: 'Html', image: Html},
         {name: 'Css', image: Css},
         {name: 'JavaScript', image: Js},
+        {name: 'Sass', image: Sass},
         {name: 'JQuery', image: Jquery},
         {name: 'Material-UI', image: Mui},
         {name: 'Bootstrap', image: Bootstrap},
-        {name: 'MongoDB', image: MongoDB},
-        {name: 'GraphQL', image: GraphQL},
         {name: 'Git', image: Git}
     ];
 
@@ -47,7 +47,7 @@ const About = () => {
             </Grid>
             <Box className={classes.aboutTextContainer_About}>
                 <Typography className={classes.aboutText_About} variant='body1'>
-                    <span className={classes.aboutTextSpan_About}> I am Xavy Romeo, a Full Stack Software Engineer </span>
+                    <span className={classes.aboutTextSpan_About}> I am Xavy Romeo, a Front End Web Developer </span>
                     with a degree in Business Economics from UC Irvine and a 
                     Full Stack Web Development certificate from UCLA
                     Extension Boot Camps. I can help visions and ideas come to life.                             

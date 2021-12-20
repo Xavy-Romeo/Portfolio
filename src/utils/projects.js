@@ -31,8 +31,17 @@ const projects = [
         languages: 'HTML, CSS', 
         image: RunBuddy,
         description: `A landing page for Run Buddy. Find trainers near you to help you get the physique you want.`,
-        site: 'google.com',
+        site: 'https://xavy-romeo.github.io/run-buddy/',
         github: 'https://github.com/Xavy-Romeo/run-buddy'
+    },
+    {
+        name: 'Email Template',
+        type: 'Place Holder Email',
+        languages: 'HTML, CSS',
+        image: '',
+        description: 'Place Holder Emails',
+        site: 'https://google.com',
+        github: 'https://github.com/Xavy-Romeo'
     }
 ];
 

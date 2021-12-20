@@ -96,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex', 
         justifyContent: 'center', 
         paddingRight: '100px', 
-        textShadow: '9px 9px 20px rgb(50,50,50,.5)',
+        textShadow: '4px 4px 8px rgb(50,50,50,.2)',
         '@media (max-width:959px)': {
             paddingRight: '0',
         }

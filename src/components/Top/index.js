@@ -22,7 +22,7 @@ const Top = () => {
                             Hi, I'm Xavy Romeo
                         </Typography>
                         <Typography className={`${classes.webDevTitle_Top} text-theme`} variant='h2'>
-                            Full Stack Software Engineer
+                            Front End Web Developer
                         </Typography>
                         <Typography className={classes.info_Top}>
                             I develop and build web applicatons specific to your needs. Click Say Hi below to let me know how my skills can work for you.

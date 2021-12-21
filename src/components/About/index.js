@@ -9,12 +9,10 @@ import useStyles from './styles';
 import Profile2 from '../../assets/images/profile2.jpg';
 import Bootstrap from '../../assets/images/bootstrap.svg';
 import Css from '../../assets/images/css.svg';
-import GraphQL from '../../assets/images/graphql.svg';
 import Git from '../../assets/images/git.svg';
 import Html from '../../assets/images/html.svg';
 import Jquery from '../../assets/images/jquery.svg';
 import Js from '../../assets/images/js.svg';
-import MongoDB from '../../assets/images/mongo.svg';
 import Mui from '../../assets/images/mui.svg';
 import ReactIcon from '../../assets/images/react.svg';
 import Sass from '../../assets/images/sass.svg'

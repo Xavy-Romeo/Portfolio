@@ -1,6 +1,7 @@
 import TheXavyShop from '../assets/images/the-xavy-shop.png';
 import HowRU from '../assets/images/howru.png';
 import RunBuddy from '../assets/images/run-buddy.png';
+import Target from '../assets/images/target.png';
 
 const projects = [
     {
@@ -35,13 +36,13 @@ const projects = [
         github: 'https://github.com/Xavy-Romeo/run-buddy'
     },
     {
-        name: 'Email Template',
-        type: 'Place Holder Email',
-        languages: 'HTML, CSS',
-        image: '',
-        description: 'Place Holder Emails',
-        site: 'https://google.com',
-        github: 'https://github.com/Xavy-Romeo'
+        name: 'Target Email',
+        type: 'Promotional Email',
+        languages: 'HTML, Sass, Foundation, Panini, Inky',
+        image: Target,
+        description:'A promotional email for Target.',
+        site: 'https://xavy-romeo.github.io/target-promotional-email/',
+        github: 'https://github.com/Xavy-Romeo/target-promotional-email'
     }
 ];
 

@@ -145,7 +145,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: '10px'
     },
     skillContainer_About: {
-        padding: '10px 0'
+        padding: '25px 0'
     },
     skillName_About: {
         textTransform: 'uppercase'

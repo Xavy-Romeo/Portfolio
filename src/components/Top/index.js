@@ -33,9 +33,9 @@ const Top = () => {
                                 <MdWavingHand className={classes.handWave_Top} />
                             </Typography>
                         </a>
-                        <Typography variant='h3' className={`${classes.signature_Top} text-theme`}>
+                        {/* <Typography variant='h3' className={`${classes.signature_Top} text-theme`}>
                             Xavy Romeo
-                        </Typography>
+                        </Typography> */}
                     </Grid>
                 </Grid>
                 <Grid item className={classes.imageGrid_Top} xs={12} md={5}>

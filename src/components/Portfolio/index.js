@@ -48,7 +48,7 @@ const Portfolio = () => {
                 </Typography>
             </Grid>
             <Grid container direction='column'>
-                <Grid container className={classes.sampleWorkTitleContainer_Portfolio} direction='column' alignItems='center'>
+                {/* <Grid container className={classes.sampleWorkTitleContainer_Portfolio} direction='column' alignItems='center'>
                     <Typography className={classes.sampleWorkTitle_Portfolio} variant='h4'>
                         Some Examples Of My Work
                     </Typography>
@@ -56,7 +56,7 @@ const Portfolio = () => {
                         Examples include my knowledge in React, JavaScript, Database implementation, internal and external API integration, 
                         API access control, global and local state management, payment processing, CSS, and Responsive Design.
                     </Typography>
-                </Grid>                    
+                </Grid>                     */}
                 <Grid container spacing={5}>
                     {projects.map((project, index) => (
                         <Grid item xs={12} sm={6} lg={3} key={index}>

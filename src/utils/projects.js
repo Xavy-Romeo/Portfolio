@@ -1,7 +1,8 @@
 import TheXavyShop from '../assets/images/the-xavy-shop.png';
-import HowRU from '../assets/images/howru.png';
+// import HowRU from '../assets/images/howru.png';
 import RunBuddy from '../assets/images/run-buddy.png';
 import Target from '../assets/images/target.png';
+import IntelliRisk from '../assets/images/intellirisk.png';
 
 const projects = [
     {
@@ -16,15 +17,13 @@ const projects = [
         github: 'https://github.com/Xavy-Romeo/the-xavy-shop'
     },
     {
-        name: 'HowRU', 
-        type: 'Mental Health Application', 
-        languages: 'React, Material-UI, MongoDB, Express, JavaScript, AJAX, HTML, CSS, NodeJS', 
-        image: HowRU,
-        description: `A digital tool to assist in finding resources to deal with mood shifts, anxiety, stress, sadness, and 
-            depression. Mindfulness at your fingertips! Connecting you with direct resources to get you through the day based 
-            on your mood.`,
-            site: 'https://howru-meditation.herokuapp.com/',
-            github: 'https://github.com/Xavy-Romeo/how-r-u'
+        name: 'IntelliRisk', 
+        type: 'IntelliRisk Landing Page', 
+        languages: 'HTML, CSS', 
+        image: IntelliRisk,
+        description: `Manage your risk all in one app. A landing page for IntelliRisk.`,
+        site: 'https://xavy-romeo.github.io/intellirisk/',
+        github: 'https://github.com/Xavy-Romeo/intellirisk'
     },
     {
         name: 'Run Buddy', 

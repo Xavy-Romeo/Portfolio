@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     },
     contactContainer_Contact: {
         position: 'relative',
-        marginBottom: '50px'
+        marginBottom: '100px'
     },
     contactImg_Contact: {
         objectFit: 'cover',

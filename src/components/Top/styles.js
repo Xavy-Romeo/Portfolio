@@ -140,14 +140,17 @@ const useStyles = makeStyles((theme) => ({
         borderTop: '20px solid rgba(0,0,0,.2)',
         borderBottom: '20px solid rgba(0,0,0,.2)',
         borderRight: '20px solid rgba(0,0,0,.2)',
-        top: '31%',
+        top: '300px',
         left: 0,
         zIndex: '-1',
-        '@media (max-width:1389px)': {
-            top: '29%',
+        '@media (max-width:1399px)': {
+            top: '250px',
         },
         '@media (max-width:1200px)': {
-            top: '26%',
+            height: '400px',
+        },
+        '@media (max-width:1120px)': {
+            width: '300px',
         },
         '@media (max-width:959px)': {
             display: 'none'

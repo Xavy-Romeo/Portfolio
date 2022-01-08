@@ -17,7 +17,7 @@ My professional portfolio page!
 Visit the site and be impressed! 
 
 ## Deployed Link: 
-https://xavy-romeo.github.io/Portfolio/
+[XavyRomeo.com](https://xavyromeo.com)
 
 ## Technologies Used
 - React

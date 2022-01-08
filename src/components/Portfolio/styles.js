@@ -85,10 +85,14 @@ const useStyles = makeStyles((theme) => ({
         height: '100%', 
         width: '100%', 
         padding: '5% 0', 
-        background: 'linear-gradient(145deg,rgb(225,235,235),rgb(245,255,255))', 
-        boxShadow: '5px 5px 15px rgb(209,217,230),-5px -5px 15px rgb(245,255,255)'
-        // background: 'linear-gradient(145deg,rgb(255,255,255),rgb(240,245,245))', 
-        // boxShadow: '5px 5px 15px rgb(220,220,220),-5px -5px 15px rgb(245,245,245)'
+        // background: 'linear-gradient(145deg,rgb(225,235,235),rgb(245,255,255))', 
+        // boxShadow: '5px 5px 15px rgb(209,217,230),-5px -5px 15px rgb(245,255,255)',
+        background: 'linear-gradient(145deg, #e2e8ec, #ffffff)',
+        boxShadow: '5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff',
+        '&:hover': {
+            // background: 'linear-gradient(145deg, rgba(150,150,150,.5), rgba(255,255,255,1))'
+            background: 'linear-gradient(145deg, #ffffff, #e2e8ec)'
+        }
     },
     imgProjectContainer_Portfolio: {
         position: 'relative', 

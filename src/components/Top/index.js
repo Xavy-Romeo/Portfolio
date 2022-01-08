@@ -22,7 +22,8 @@ const Top = () => {
                             Hi, I'm Xavy Romeo
                         </Typography>
                         <Typography className={`${classes.webDevTitle_Top} text-theme`} variant='h2'>
-                            Front End Web Developer
+                            {/* Front End  */}
+                            Web Developer
                         </Typography>
                         <Typography className={classes.info_Top}>
                             I develop and build web applicatons specific to your needs. Click Say Hi below to let me know how my skills can work for you.
@@ -51,6 +52,7 @@ const Top = () => {
                         </Box>
                     </Grid>
                 </Grid>
+                <Box className={classes.square_Top} />
             </Grid>
         </section>
     );

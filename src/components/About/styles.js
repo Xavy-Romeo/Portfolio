@@ -142,7 +142,7 @@ const useStyles = makeStyles((theme) => ({
     mySkillsTitle_About: {
         fontWeight: '600', 
         textShadow: `1px 1px ${theme.palette.text.primary}`,
-        marginBottom: '10px'
+        marginBottom: '30px'
     },
     skillContainer_About: {
         padding: '25px 0'
@@ -157,7 +157,7 @@ const useStyles = makeStyles((theme) => ({
     downloadResumeLink_About: {
         display: 'flex', 
         alignItems: 'center', 
-        margin: '40px 0', 
+        margin: '5px 0', 
         padding: '5px',
         cursor: 'pointer',
         textDecoration: 'none',
@@ -171,7 +171,7 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: '7px'
     },
     experienceContainer_About: {
-        marginBottom: '50px'
+        margin: '40px 0 50px 0'
     },
     experienceItem_About: {
         margin: '10px 0'

@@ -45,7 +45,7 @@ const About = () => {
             </Grid>
             <Box className={classes.aboutTextContainer_About}>
                 <Typography className={classes.aboutText_About} variant='body1'>
-                    <span className={classes.aboutTextSpan_About}> I am Xavy Romeo, a Front End Web Developer </span>
+                    <span className={classes.aboutTextSpan_About}> I am Xavy Romeo, a Web Developer </span>
                     with a degree in Business Economics from UC Irvine and a 
                     Full Stack Web Development certificate from UCLA
                     Extension Boot Camps. I can help visions and ideas come to life.                             
@@ -57,6 +57,21 @@ const About = () => {
                         <img src={Profile2} className={classes.profileImg_About} height='100%' alt='Xavy Smiling!'/>
                     </Box>
                     <Grid container className={classes.linkContainer_About} direction='column' alignItems='center'>
+                    <Box className={`${classes.downloadContainer_About} blink`}>
+                            <Box>
+                                <a 
+                                    download='Resume - Javier Romeo Vazquez'
+                                    href={ResumePdf}
+                                    className={`${classes.downloadResumeLink_About} view-project-link`}
+                                    aria-label='download resume button'
+                                >
+                                    <Typography className={classes.downloadResume_About} variant='body2'>
+                                        Download My Resume
+                                        <FiDownload className={classes.downloadIcon_About} />
+                                    </Typography>
+                                </a>
+                            </Box>
+                        </Box> 
                         <Box>
                             <a href='mailto:xavy.romeo.sse@gmail.com' className={classes.emailContainer_About}>
                                 <Typography className={classes.emailTitle_About}>
@@ -67,7 +82,7 @@ const About = () => {
                                     Xavy.Romeo.SSE@gmail.com
                                 </Typography>
                             </a>
-                        </Box>
+                        </Box>   
                         <Grid container justifyContent='center'>
                             <a href='https://github.com/Xavy-Romeo' target='_blank' rel='noopener noreferrer'>
                                 <FaGithub className={classes.socialIcon_About} />
@@ -106,21 +121,7 @@ const About = () => {
                                 ))}
                             </Grid>
                         </Grid>
-                        <Box className={`${classes.downloadContainer_About} blink`}>
-                            <Box>
-                                <a 
-                                    download='Resume - Javier Romeo Vazquez'
-                                    href={ResumePdf}
-                                    className={`${classes.downloadResumeLink_About} view-project-link`}
-                                    aria-label='download resume button'
-                                >
-                                    <Typography className={classes.downloadResume_About} variant='body2'>
-                                        Download My Resume
-                                        <FiDownload className={classes.downloadIcon_About} />
-                                    </Typography>
-                                </a>
-                            </Box>
-                        </Box>    
+                        
                         <Grid container className={classes.experienceContainer_About}>
                             <Grid item xs={6}>
                                 <Grid container direction='column'>

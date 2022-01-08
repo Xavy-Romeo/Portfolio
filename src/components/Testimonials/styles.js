@@ -55,8 +55,10 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: '15px', 
         height: '100%', 
         width: '100%',
-        background: 'linear-gradient(145deg,rgb(225,235,235),rgb(245,255,255))', 
-        boxShadow: '5px 5px 15px rgb(209,217,230),-5px -5px 15px rgb(245,255,255)',
+        // background: 'linear-gradient(145deg,rgb(225,235,235),rgb(245,255,255))', 
+        // boxShadow: '5px 5px 15px rgb(209,217,230),-5px -5px 15px rgb(245,255,255)',
+        background: 'linear-gradient(145deg, #e2e8ec, #ffffff)',
+        boxShadow: '5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff',
         padding: '40px',
         '@media (max-width:599px)': {
             padding: '20px',

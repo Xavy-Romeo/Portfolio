@@ -2,7 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({ 
     topSection_Top: {
-        minHeight: '95vh'
+        minHeight: '95vh',
+        position: 'relative'
     },
     mainGrid_Top: {
         padding: '180px 0 100px 0',
@@ -111,6 +112,7 @@ const useStyles = makeStyles((theme) => ({
         height: '700px',
         display: 'flex',
         alignItems: 'center',
+        borderRadius: '5px',
         boxShadow: theme.shadows[10],
         '@media (max-width:1399px)': {
             height: '600px',
@@ -126,8 +128,29 @@ const useStyles = makeStyles((theme) => ({
         height: '700px',
         maxHeight: '900px',
         objectFit: 'cover',
+        borderRadius: '5px',
         '@media (max-width:1200px)': {
             height: '100%'
+        }
+    },
+    square_Top: {
+        position: 'absolute',
+        height: '450px',
+        width: '350px',
+        borderTop: '20px solid rgba(0,0,0,.2)',
+        borderBottom: '20px solid rgba(0,0,0,.2)',
+        borderRight: '20px solid rgba(0,0,0,.2)',
+        top: '31%',
+        left: 0,
+        zIndex: '-1',
+        '@media (max-width:1389px)': {
+            top: '29%',
+        },
+        '@media (max-width:1200px)': {
+            top: '26%',
+        },
+        '@media (max-width:959px)': {
+            display: 'none'
         }
     }
 }));

@@ -164,6 +164,11 @@
   animation: fade-out 1s;
 }
 
+.fade-in {
+  animation: fade-in 300s infinite;
+  /* animation-delay: 1s; */
+}
+
 .blink {
   animation: blink 2s linear infinite;
 }
@@ -177,6 +182,21 @@
   }
   100% {
     opacity: 0;;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  .5% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

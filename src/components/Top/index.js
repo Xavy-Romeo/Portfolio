@@ -19,7 +19,7 @@ const Top = () => {
         tl
             .fromTo('.welcome', 
                 {y:100, opacity: 0}, 
-                {y: 0, opacity: 1, delay: 3, duration: 2.5},
+                {y: 0, opacity: 1, delay: 4.5, duration: 2.5},
             )
             .fromTo('.hi-title', 
                 {y:100, opacity: 0}, 

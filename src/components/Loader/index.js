@@ -12,13 +12,14 @@ const Loader = () => {
     const classes = useStyles();
 
     const [ loader, setLoader ] = useState(true);
-    const [ fade, setFade ] = useState(false);
+    // const [ fade, setFade ] = useState(false);
+    const [ fade, ] = useState(false);
 
     useEffect(() => {
         // apply fade to loader
-        setTimeout(() => {
-            setFade(true);
-        }, 500);
+        // setTimeout(() => {
+        //     setFade(true);
+        // }, 500);
 
         // remove loading screen
         setTimeout(() => {

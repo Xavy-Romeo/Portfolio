@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import gsap, { Power2 } from 'gsap';
+
 import useStyles from './styles';
 import Loader from '../../components/Loader'; 
 import Header from '../../components/Header';
@@ -15,8 +18,24 @@ import Box from '@material-ui/core/Box';
 const Home = () => {
     const classes = useStyles();
 
+    useEffect(() => {
+        let tl = gsap.timeline();
+
+        tl
+            .to('.left-loader',
+                {x: '100%', yoyo: true, repeat: 1, delay: 1, duration: 1, ease: Power2.easeOut}
+            )
+            .to('.right-loader',
+                {x: '-100%', yoyo: true, repeat: 1, delay: 1, duration: 1, ease: Power2.easeOut},
+                '-=3'
+            )
+    }, []);
+
     return (
         <>
+            <Box className={`${classes.leftLoader_Home} left-loader`} />
+            <Box className={`${classes.rightLoader_Home} right-loader`} />
+
             <Loader />
             <Header />
             <main >

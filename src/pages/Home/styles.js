@@ -35,7 +35,23 @@ const useStyles = makeStyles((theme) => ({
     //         width: '200px',
     //         height: '200px'
     //     }  
-    // }
+    // },
+    leftLoader_Home: {
+        width: '50%',
+        height: '100vh',
+        background: 'linear-gradient(to right, rgb(18,194,233), rgb(196,113,237))',
+        position: 'fixed',
+        zIndex: '100000',
+        left: '-50%'
+    },
+    rightLoader_Home: {
+        width: '50%',
+        height: '100vh',
+        background: 'linear-gradient(to right, rgb(196,113,237), rgb(246,79,89))',
+        position: 'fixed',
+        zIndex: '100000',
+        right: '-50%'
+    }
 
 }));
 

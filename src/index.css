@@ -156,17 +156,17 @@
 /* end skills bar styles */
 
 /* animations */
-.fade-out-page{
+/* .fade-out-page{
+  animation: fade-out 2s;
+} */
+
+.fade-out {
   animation: fade-out 2s;
 }
 
-.fade-out {
-  animation: fade-out 1s;
-}
-
 .fade-in {
-  animation: fade-in 300s infinite;
-  /* animation-delay: 1s; */
+  animation: fade-in 600s infinite;
+  /* animation-delay: 3s; */
 }
 
 .blink {

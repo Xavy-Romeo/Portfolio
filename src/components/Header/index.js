@@ -34,7 +34,7 @@ const Header = () => {
         tl
             .fromTo('.header-title', 
                 {x:'-100', opacity: 0}, 
-                {x: 0, opacity: 1, duration: 2.5, delay:1, ease: Power4.easeInOut}
+                {x: 0, opacity: 1, duration: 2.5, delay:2.5, ease: Power4.easeInOut}
             )
             .fromTo('.nav-container', 
                 {x:'100', opacity: 0}, 

@@ -110,15 +110,18 @@ const useStyles = makeStyles((theme) => ({
     },
     imageDiv_Top: {
         height: '700px',
+        width: '467px',
         display: 'flex',
         alignItems: 'center',
         borderRadius: '5px',
         boxShadow: theme.shadows[10],
         '@media (max-width:1399px)': {
             height: '600px',
+            width: '400px'
         },
         '@media (max-width:1200px)': {
-            height: '550px'
+            height: '550px',
+            width: '367px'
         },
         '@media (max-width:959px)': {
             height: '100%'
@@ -128,6 +131,7 @@ const useStyles = makeStyles((theme) => ({
         height: '700px',
         maxHeight: '900px',
         objectFit: 'cover',
+        objectPosition: 'top',
         borderRadius: '5px',
         '@media (max-width:1200px)': {
             height: '100%'
@@ -155,6 +159,22 @@ const useStyles = makeStyles((theme) => ({
         '@media (max-width:959px)': {
             display: 'none'
         }
+    },
+    scrollDownBox_Top: {
+        width: '100%'
+    },
+    scrollDown_Top: {
+        margin: '0 auto',
+        display: 'flex',
+        alignItems: 'center', 
+        fontSize: '14px',
+        width: '116px',
+        border: `1px solid ${theme.palette.text.primary}`,
+        borderRadius: '20px',
+        padding: '2px 8px'
+    },
+    scrollIcon_Top: {
+        marginRight: '5px',
     }
 }));
 

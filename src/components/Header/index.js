@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import gsap, { Power3 } from 'gsap';
+import gsap, { Power4 } from 'gsap';
 
 import AppBar from '@material-ui/core/AppBar';
 import Grid from '@material-ui/core/Grid';
@@ -30,8 +30,17 @@ const Header = () => {
     }, []);
 
     useEffect(() => {
-        gsap.fromTo('.header-title', {x:'-100', opacity: 0}, {x: 0, opacity: 1, duration: 2, delay:1, ease: Power3.easeInOut});
-        gsap.fromTo('.nav-container', {x:'100', opacity: 0}, {x: 0, opacity: 1, duration: 2, delay:1, ease: Power3.easeInOut});
+        const tl = gsap.timeline();
+        tl
+            .fromTo('.header-title', 
+                {x:'-100', opacity: 0}, 
+                {x: 0, opacity: 1, duration: 2.5, delay:1, ease: Power4.easeInOut}
+            )
+            .fromTo('.nav-container', 
+                {x:'100', opacity: 0}, 
+                {x: 0, opacity: 1, duration: 2.5, ease: Power4.easeInOut}, 
+                '-=2.5'
+            );
     }, []); 
 
     return (

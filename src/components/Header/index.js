@@ -29,19 +29,19 @@ const Header = () => {
         window.addEventListener('scroll', changeHeader);
     }, []);
 
-    useEffect(() => {
-        const tl = gsap.timeline();
-        tl
-            .fromTo('.header-title', 
-                {x:'-100', opacity: 0}, 
-                {x: 0, opacity: 1, duration: 2.5, delay:2.5, ease: Power4.easeInOut}
-            )
-            .fromTo('.nav-container', 
-                {x:'100', opacity: 0}, 
-                {x: 0, opacity: 1, duration: 2.5, ease: Power4.easeInOut}, 
-                '-=2.5'
-            );
-    }, []); 
+    // useEffect(() => {
+    //     const tl = gsap.timeline();
+    //     tl
+    //         .fromTo('.header-title', 
+    //             {x:'-100', opacity: 0}, 
+    //             {x: 0, opacity: 1, duration: 2.5, delay:2.5, ease: Power4.easeInOut}
+    //         )
+    //         .fromTo('.nav-container', 
+    //             {x:'100', opacity: 0}, 
+    //             {x: 0, opacity: 1, duration: 2.5, ease: Power4.easeInOut}, 
+    //             '-=2.5'
+    //         );
+    // }, []); 
 
     return (
         <AppBar className={!headerScroll ? classes.header_Header : `${classes.headerScroll_Header} main-header`}>
@@ -49,7 +49,7 @@ const Header = () => {
                 <Grid container justifyContent='space-between' alignItems='center'> 
                     <Grid className='header-title' item xs={8} sm={5} lg={3}>
                         <a href='#home' className={classes.titleLink_Header}>
-                            <Typography className={`${classes.headerTitle_Header} text-theme`} variant='h1'>
+                            <Typography className={`${classes.headerTitle_Header}`} variant='h1'>
                                 Xavy Romeo
                             </Typography>
                         </a>

@@ -52,9 +52,12 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     aboutTextContainer_About: {
-        marginBottom: '50px',
+        marginBottom: '120px',
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        '@media (max-width:959px)': {
+            marginBottom: '50px',
+        }
     },
     aboutText_About: {
         marginBottom: '10px',

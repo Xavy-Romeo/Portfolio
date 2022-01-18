@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     projectGrid_Portfolio: {
-        borderRadius: '15px', 
+        borderRadius: '10px', 
         height: '100%', 
         width: '100%', 
         padding: '5% 0', 

@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
         textTransform: 'uppercase', 
         fontWeight: 'bold', 
         paddingBottom: '10px',
+        color: 'rgb(18,194,233)'
     },
     hiTitle_Top: {
         fontSize: '60px',
@@ -66,6 +67,7 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     info_Top: {
+        color: 'rgba(0,0,0,.7)',
         paddingBottom: '10px',
         '@media (max-width:1120px)': {
             fontSize: '16px',
@@ -89,19 +91,19 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: '5px',
         paddingTop: '6px'
     },
-    signature_Top: {
-        fontFamily: 'Kaushan Script, sans-sefif', 
-        fontWeight: 'bold', 
-        transform: 'skewY(-5deg)', 
-        paddingBottom: '5px', 
-        display: 'flex', 
-        justifyContent: 'center', 
-        paddingRight: '100px', 
-        textShadow: '4px 4px 8px rgb(50,50,50,.2)',
-        '@media (max-width:959px)': {
-            paddingRight: '0',
-        }
-    },
+    // signature_Top: {
+    //     fontFamily: 'Kaushan Script, sans-sefif', 
+    //     fontWeight: 'bold', 
+    //     transform: 'skewY(-5deg)', 
+    //     paddingBottom: '5px', 
+    //     display: 'flex', 
+    //     justifyContent: 'center', 
+    //     paddingRight: '100px', 
+    //     textShadow: '4px 4px 8px rgb(50,50,50,.2)',
+    //     '@media (max-width:959px)': {
+    //         paddingRight: '0',
+    //     }
+    // },
     imageContainer_Top: {
         '@media (max-width:959px)': {
             justifyContent: 'center',
@@ -113,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
         width: '467px',
         display: 'flex',
         alignItems: 'center',
-        borderRadius: '5px',
+        borderRadius: '10px',
         boxShadow: theme.shadows[10],
         '@media (max-width:1399px)': {
             height: '600px',
@@ -132,7 +134,7 @@ const useStyles = makeStyles((theme) => ({
         maxHeight: '900px',
         objectFit: 'cover',
         objectPosition: 'top',
-        borderRadius: '5px',
+        borderRadius: '10px',
         '@media (max-width:1200px)': {
             height: '100%'
         }
@@ -141,9 +143,9 @@ const useStyles = makeStyles((theme) => ({
         position: 'absolute',
         height: '450px',
         width: '350px',
-        borderTop: '20px solid rgba(0,0,0,.2)',
-        borderBottom: '20px solid rgba(0,0,0,.2)',
-        borderRight: '20px solid rgba(0,0,0,.2)',
+        borderTop: '20px solid transparent',
+        borderBottom: '20px solid rgba(0,0,0,.8)',
+        borderRight: '20px solid rgba(0,0,0,.8)',
         top: '300px',
         left: 0,
         zIndex: '-1',

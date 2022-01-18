@@ -17,13 +17,15 @@ const useStyles = makeStyles((theme) => ({
     },
     headerTitle_Header: {
         paddingBottom: '5px',
-        fontFamily: 'Kaushan Script, sans-sefif',
-        fontWeight: 'bold',
-        textShadow: `2px 2px black`,
+        // fontFamily: 'Kaushan Script, sans-sefif',
+        fontWeight: '700',
+        letterSpacing: '-1.5px',
+        // textShadow: `2px 2px black`,
         transition: '.3s',
+        color: theme.palette.text.primary,
+        fontSize: '30px',
         '&:hover': {
-            textShadow: '3px 3px rgb(40,40,40)',
-            transition: '.3s'
+            textShadow: '2px 2px 2px rgba(246,79,89,.5)'
         },
         '@media (max-width:350px)': {
             fontSize: '34px',

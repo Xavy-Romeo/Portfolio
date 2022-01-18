@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     testimonialContainer_Testimonials: {
-        borderRadius: '15px', 
+        borderRadius: '10px', 
         height: '100%', 
         width: '100%',
         // background: 'linear-gradient(145deg,rgb(225,235,235),rgb(245,255,255))', 

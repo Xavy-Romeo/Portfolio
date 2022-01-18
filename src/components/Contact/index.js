@@ -35,7 +35,7 @@ const Contact = () => {
                                 Name:
                             </Typography>
                             <input 
-                                className={classes.contactFromInputs_Contact} 
+                                className={classes.contactFormInputs_Contact} 
                                 type='text' 
                                 placeholder='Your Name' 
                                 required
@@ -47,7 +47,7 @@ const Contact = () => {
                                 Email:
                             </Typography>
                             <input 
-                                className={classes.contactFromInputs_Contact} 
+                                className={classes.contactFormInputs_Contact} 
                                 type='email' 
                                 placeholder='Your Email' 
                                 required
@@ -59,7 +59,7 @@ const Contact = () => {
                                 Message:
                             </Typography>
                             <textarea 
-                                className={`${classes.contactFromInputs_Contact} ${classes.textArea_Contact}`} 
+                                className={`${classes.contactFormInputs_Contact} ${classes.textArea_Contact}`} 
                                 placeholder='Your Message Here' 
                                 rows='5'
                                 required

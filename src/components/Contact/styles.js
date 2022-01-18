@@ -58,7 +58,8 @@ const useStyles = makeStyles((theme) => ({
     contactImg_Contact: {
         objectFit: 'cover',
         minHeight: '550px',
-        height: '80vh'
+        height: '80vh',
+        borderRadius: '10px'
     },
     contactFormGrid_Contact: {
         position: 'absolute', 
@@ -66,8 +67,8 @@ const useStyles = makeStyles((theme) => ({
         left: '50%', 
         height: '80%', 
         width: '45%', 
-        background: 'rgba(255,255,255,.2)', 
-        borderRadius: '5px',
+        background: 'rgba(255,255,255,.15)', 
+        borderRadius: '10px',
         minHeight: '500px',
         overflow: 'hidden',
         '@media (max-width:1150px)': {
@@ -87,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
     contactFormLabel_Contact: {
         marginBottom: '5px',
         textShadow: '1px 1px 3px black',
-        color: 'rgba(255,255,255,.9)',
+        color: 'rgba(18,194,233,.8)',
         textTransform: 'uppercase',
         letterSpacing: '1.25px',
         '@media (max-width:850px)': {
@@ -99,10 +100,10 @@ const useStyles = makeStyles((theme) => ({
             marginBottom: '0',
         },
     },
-    contactFromInputs_Contact: {
+    contactFormInputs_Contact: {
         minHeight: '20px',
         borderRadius: '10px',
-        border: '3px solid rgb(150,150,150,.4)',
+        border: '2px solid rgb(150,150,150,.4)',
         fontFamily: 'Rubik, sans-serif',
         fontSize: '20px',
         marginBottom: '20px',
@@ -110,10 +111,10 @@ const useStyles = makeStyles((theme) => ({
         color: 'rgba(0,0,0,.87)',
         padding: '5px 15px',
         '&:hover': {
-            border: '3px solid rgba(0,0,0,.8)'
+            border: '2px solid rgba(18,194,233,.8)'
         },
         '&:focus': {
-            border: '3px solid rgba(255,255,255,.87)',
+            border: '2px solid rgba(255,255,255,.87)',
             backgroundColor: 'rgba(255,255,255,.8)',
             outline: 'none',
         },

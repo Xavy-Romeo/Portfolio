@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     contactImg_Contact: {
         objectFit: 'cover',
         minHeight: '550px',
-        height: '60vh'
+        height: '80vh'
     },
     contactFormGrid_Contact: {
         position: 'absolute', 

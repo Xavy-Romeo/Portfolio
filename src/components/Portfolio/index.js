@@ -39,11 +39,19 @@ const Portfolio = () => {
                 />
             </Modal>
 
-            <Grid container className={classes.sectionTitleContainer} justifyContent='center'>
+            {/* <Grid container className={classes.sectionTitleContainer} justifyContent='center'>
                 <Typography className={classes.sectionTitleShadow}>
                     Portfolio
                 </Typography>
                 <Typography className={`${classes.sectionTitle} text-theme`} variant='h2'>
+                    My Work
+                </Typography>
+            </Grid> */}
+            <Grid container className={classes.sectionTitleContainer}>
+                <Typography className={classes.sectionSubtitle} variant='body2'>
+                    Portfolio
+                </Typography>
+                <Typography className={classes.sectionTitle} variant='h2'>
                     My Work
                 </Typography>
             </Grid>
@@ -97,7 +105,7 @@ const Portfolio = () => {
                                         <Typography className={`${classes.projectAppTitle_Project} text-theme`} variant='body2'>
                                             {project.type}
                                         </Typography>
-                                        <Typography className={classes.projectTitle_Project} variant='subtitle1'>
+                                        <Typography className={classes.projectTitle_Project} variant='h5'>
                                             {project.name}
                                         </Typography>
                                         <Typography className={classes.techUsed_Project} variant='caption'>

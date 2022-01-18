@@ -14,59 +14,59 @@ import ProfilePic from '../../assets/images/profile.jpg';
 const Top = () => {
     const classes = useStyles();
 
-    // useEffect(() => {
-    //     const tl = gsap.timeline();
-    //     tl
-    //         .fromTo('.welcome', 
-    //             {y:100, opacity: 0}, 
-    //             {y: 0, opacity: 1, delay: 4.5, duration: 2.5},
-    //         )
-    //         .fromTo('.hi-title', 
-    //             {y:100, opacity: 0}, 
-    //             {y: 0, opacity: 1, duration: 2.5},
-    //             '-=2.5'
-    //         )
-    //         .fromTo('.web-dev-title', 
-    //             {y:100, opacity: 0}, 
-    //             {y: 0, opacity: 1, duration: 2.5},
-    //             '-=2.5'
-    //         )
-    //         .fromTo('.top-p', 
-    //             {opacity: 0},
-    //             {opacity: 1, duration: 2},
-    //             '-=1'
-    //         )
-    //         .fromTo('.say-hi-link', 
-    //             {opacity: 0},
-    //             {opacity: 1, duration: 2},
-    //             '-=2'
-    //         )
-    //         .fromTo('.square', 
-    //             {opacity: 0},
-    //             {opacity: 1, duration: 2},
-    //             '-=2'
-    //         )
-    //         .fromTo('.profile-img', 
-    //             {y: -400, height:0, opacity: 0}, 
-    //             {y: 0, height:'100%', opacity: 1, duration: 1.2},
-    //             '-=1.2'
-    //         )
-    //         .fromTo('.profile-img-div', 
-    //             {boxShadow: 'none'}, 
-    //             {boxShadow: '0px 6px 6px -3px rgba(0,0,0,.2), 0px 10px 14px 1px rgba(0,0,0,.14), 0px 4px 18px 3px rgba(0,0,0,.12)', 
-    //                 duration:.5, ease: Power4.easeInOut
-    //             }
-    //         )
-    //         .fromTo('.scroll-down', 
-    //             {opacity: 0}, 
-    //             {opacity: 1, color: 'rgb(246,79,89)', borderColor: 'rgb(246,79,89)', duration: 1.5},
-    //             '-=1'
-    //         )
-    //         .to('.scroll-down', 
-    //             {y: 50, duration: 1.5, repeat: -1, yoyo: true}
-    //         )
-    //     ;
-    // }, []); 
+    useEffect(() => {
+        const tl = gsap.timeline();
+        tl
+            .fromTo('.welcome', 
+                {y:100, opacity: 0}, 
+                {y: 0, opacity: 1, delay: 4.5, duration: 2.5},
+            )
+            .fromTo('.hi-title', 
+                {y:100, opacity: 0}, 
+                {y: 0, opacity: 1, duration: 2.5},
+                '-=2.5'
+            )
+            .fromTo('.web-dev-title', 
+                {y:100, opacity: 0}, 
+                {y: 0, opacity: 1, duration: 2.5},
+                '-=2.5'
+            )
+            .fromTo('.top-p', 
+                {opacity: 0},
+                {opacity: 1, duration: 2},
+                '-=1'
+            )
+            .fromTo('.say-hi-link', 
+                {opacity: 0},
+                {opacity: 1, duration: 2},
+                '-=2'
+            )
+            .fromTo('.square', 
+                {opacity: 0},
+                {opacity: 1, duration: 2},
+                '-=2'
+            )
+            .fromTo('.profile-img', 
+                {y: -400, height:0, opacity: 0}, 
+                {y: 0, height:'100%', opacity: 1, duration: 1.2},
+                '-=1.2'
+            )
+            .fromTo('.profile-img-div', 
+                {boxShadow: 'none'}, 
+                {boxShadow: '0px 6px 6px -3px rgba(0,0,0,.2), 0px 10px 14px 1px rgba(0,0,0,.14), 0px 4px 18px 3px rgba(0,0,0,.12)', 
+                    duration:.5, ease: Power4.easeInOut
+                }
+            )
+            .fromTo('.scroll-down', 
+                {opacity: 0}, 
+                {opacity: 1, color: 'rgb(246,79,89)', borderColor: 'rgb(246,79,89)', duration: 1.5},
+                '-=1'
+            )
+            .to('.scroll-down', 
+                {y: 50, duration: 1.5, repeat: -1, yoyo: true}
+            )
+        ;
+    }, []); 
 
     return (
         <section className={classes.topSection_Top} id='home'>

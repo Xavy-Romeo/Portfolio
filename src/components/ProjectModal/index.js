@@ -18,7 +18,7 @@ const ProjectModal = ({ project, handleClose }) => {
                 <IoCloseSharp className={classes.closeIcon_ProjectModal} />
             </Box>
             <Grid container className={classes.modalContainer_ProjectModal} justifyContent='center' alignItems='center'>
-                <Typography variant='h3' className={`${classes.projectTitle_ProjectModal} text-theme`}>
+                <Typography variant='h3' className={`${classes.projectTitle_ProjectModal}`}>
                         {project.name}
                 </Typography>
                 <Grid container>

@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     mainGrid_Top: {
         padding: '180px 0 100px 0',
         '@media (max-width:650px)': {
-            paddingTop: '100px',
+            paddingTop: '70px',
         },
     },
     infoGrid_Top: {
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         textTransform: 'uppercase', 
         fontWeight: 'bold', 
         paddingBottom: '10px',
-        color: 'rgb(18,194,233)'
+        color: 'rgb(246,79,89)'
     },
     hiTitle_Top: {
         fontSize: '60px',
@@ -67,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     info_Top: {
-        color: 'rgba(0,0,0,.7)',
+        color: 'rgba(40,40,40,.7)',
         paddingBottom: '10px',
         '@media (max-width:1120px)': {
             fontSize: '16px',
@@ -163,7 +163,10 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     scrollDownBox_Top: {
-        width: '100%'
+        width: '100%',
+        '@media (max-width:959px)': {
+            display: 'none'
+        }
     },
     scrollDown_Top: {
         margin: '0 auto',

@@ -5,12 +5,18 @@ const useStyles = makeStyles((theme) => ({
         background: 'rgba(255,255,255,0)',
         height: '80px',
         boxShadow: 'none',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        '@media (max-width:959px)': {
+            height: '40px',
+        }
     },
     headerScroll_Header: {
         background: 'rgba(240, 255, 255,0.7)',
         height: '80px',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        '@media (max-width:959px)': {
+            height: '40px',
+        }
     },
     titleLink_Header:{
         textDecoration: 'none',
@@ -18,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
     headerTitle_Header: {
         paddingBottom: '5px',
         // fontFamily: 'Kaushan Script, sans-sefif',
-        fontWeight: '700',
-        letterSpacing: '-1.5px',
+        fontWeight: '600',
+        letterSpacing: '-2px',
         // textShadow: `2px 2px black`,
         transition: '.3s',
         color: theme.palette.text.primary,
@@ -27,12 +33,15 @@ const useStyles = makeStyles((theme) => ({
         '&:hover': {
             textShadow: '2px 2px 2px rgba(246,79,89,.5)'
         },
-        '@media (max-width:350px)': {
-            fontSize: '34px',
+        '@media (max-width:599px)': {
+            fontSize: '20px',
         },
-        '@media (max-width:305px)': {
-            fontSize: '30px',
-        }
+        // '@media (max-width:350px)': {
+        //     fontSize: '34px',
+        // },
+        // '@media (max-width:305px)': {
+        //     fontSize: '30px',
+        // }
     },
     navContainer_Header: {
         display: 'flex', 

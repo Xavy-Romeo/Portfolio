@@ -11,11 +11,19 @@ const Contact = () => {
 
     return (
         <section className={`section border-top`} id='contact'>
-            <Grid container className={classes.sectionTitleContainer} justifyContent='center'>
+            {/* <Grid container className={classes.sectionTitleContainer} justifyContent='center'>
                 <Typography className={classes.sectionTitleShadow}>
                     Contact Me
                 </Typography>
                 <Typography className={`${classes.sectionTitle} text-theme`} variant='h2'>
+                    Get In Touch
+                </Typography>
+            </Grid> */}
+            <Grid container className={classes.sectionTitleContainer}>
+                <Typography className={classes.sectionSubtitle} variant='body2'>
+                    Contact Me
+                </Typography>
+                <Typography className={classes.sectionTitle} variant='h2'>
                     Get In Touch
                 </Typography>
             </Grid>

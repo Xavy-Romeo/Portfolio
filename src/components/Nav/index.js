@@ -50,13 +50,7 @@ const Nav = () => {
         <Box>
             <Hidden lgUp>
                 <Box style={{display: 'flex', alignItems: 'center'}}>
-                    <BiMenu
-                        onClick={openMenu}
-                        style={{
-                            fontSize: '60px', 
-                            color: 'black',
-                        }} 
-                    />
+                    <BiMenu onClick={openMenu} className={classes.menuIcon_Nav} />
                     <Menu
                         anchorEl={anchorEl}
                         keepMounted

@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     },
     modalContainer_ProjectModal: {
         position: 'relative',
-        borderRadius: '5px',
+        borderRadius: '10px',
         padding: '50px 80px',
         // background: 'linear-gradient(145deg,rgb(225,235,235),rgb(245,255,255))', 
         background: 'linear-gradient(145deg, #e2e8ec, #ffffff)',
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     },
     projectTitle_ProjectModal: {
         fontWeight: '600',
-        textShadow: `1px 1px ${theme.palette.text.primary}`
+        // textShadow: `1px 1px ${theme.palette.text.primary}`
     },
     mainImgContainer_ProjectModal: {
         display: 'flex',

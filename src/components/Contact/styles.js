@@ -1,64 +1,90 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({ 
+    // sectionTitleContainer: {
+    //     position: 'relative'
+    // },
+    // sectionTitleShadow: {
+    //     fontFamily: 'Londrina Outline, cursive',
+    //     textAlign: 'center',
+    //     width: '100%',
+    //     color: 'black',
+    //     fontSize: '120px',
+    //     textShadow: '10px 10px 5px rgb(220,220,220)',
+    //     opacity: '5%',
+    //     fontWeight: 'bold',
+    //     textTransform: 'uppercase',
+    //     letterSpacing: '2px',
+    //     '@media (max-width:750px)': {
+    //         fontSize: '80px',
+    //     },
+    //     '@media (max-width:500px)': {
+    //         fontSize: '60px',
+    //     },
+    //     '@media (max-width:400px)': {
+    //         fontSize: '50px',
+    //     },
+    //     '@media (max-width:335px)': {
+    //         fontSize: '44px',
+    //     },
+    //     '@media (max-width:300px)': {
+    //         fontSize: '36px',
+    //     }
+    // },
+    // sectionTitle: {
+    //     position: 'absolute',
+    //     top: '50%',
+    //     left: '50%',
+    //     transform: 'translate(-50%, -30%)',
+    //     fontWeight: '600',
+    //     textShadow: `1px 1px ${theme.palette.text.primary}`,
+    //     '@media (max-width:550px)': {
+    //         fontSize: '30px',
+    //     },
+    //     '@media (max-width:475px)': {
+    //         fontSize: '24px',
+    //     },
+    //     '@media (max-width:400px)': {
+    //         fontSize: '20px',
+    //     },
+    //     '@media (max-width:330px)': {
+    //         fontSize: '16px',
+    //     }
+    // },
     sectionTitleContainer: {
-        position: 'relative'
-    },
-    sectionTitleShadow: {
-        fontFamily: 'Londrina Outline, cursive',
-        textAlign: 'center',
         width: '100%',
-        color: 'black',
-        fontSize: '120px',
-        textShadow: '10px 10px 5px rgb(220,220,220)',
-        opacity: '5%',
-        fontWeight: 'bold',
-        textTransform: 'uppercase',
-        letterSpacing: '2px',
-        '@media (max-width:750px)': {
-            fontSize: '80px',
-        },
-        '@media (max-width:500px)': {
-            fontSize: '60px',
-        },
-        '@media (max-width:400px)': {
-            fontSize: '50px',
-        },
-        '@media (max-width:335px)': {
-            fontSize: '44px',
-        },
-        '@media (max-width:300px)': {
-            fontSize: '36px',
+        marginTop: '60px',
+        '@media (max-width:959px)': {
+            marginTop: '10px',
         }
     },
     sectionTitle: {
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -30%)',
+        textAlign: 'center',
         fontWeight: '600',
-        textShadow: `1px 1px ${theme.palette.text.primary}`,
-        '@media (max-width:550px)': {
-            fontSize: '30px',
-        },
-        '@media (max-width:475px)': {
-            fontSize: '24px',
-        },
-        '@media (max-width:400px)': {
-            fontSize: '20px',
-        },
-        '@media (max-width:330px)': {
-            fontSize: '16px',
-        }
+        textTransform: 'uppercase',
+        width: '100%',
+        lineHeight: '1',
+        margin: '15px 0 50px 0',
+    },
+    sectionSubtitle: {
+        textAlign: 'center',
+        width: '100%',
+        lineHeight: '1',
+        fontWeight: '400',
+        color: 'rgb(18,194,233)'
     },
     contactContainer_Contact: {
         position: 'relative',
-        marginBottom: '100px'
+        marginBottom: '60px',
+        '@media (max-width:959px)': {
+            marginBottom: '10px',
+        }
     },
     contactImg_Contact: {
         objectFit: 'cover',
         minHeight: '550px',
-        height: '80vh'
+        height: '80vh',
+        borderRadius: '10px'
     },
     contactFormGrid_Contact: {
         position: 'absolute', 
@@ -66,8 +92,8 @@ const useStyles = makeStyles((theme) => ({
         left: '50%', 
         height: '80%', 
         width: '45%', 
-        background: 'rgba(255,255,255,.2)', 
-        borderRadius: '5px',
+        background: 'rgba(255,255,255,.15)', 
+        borderRadius: '10px',
         minHeight: '500px',
         overflow: 'hidden',
         '@media (max-width:1150px)': {
@@ -87,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
     contactFormLabel_Contact: {
         marginBottom: '5px',
         textShadow: '1px 1px 3px black',
-        color: 'rgba(255,255,255,.9)',
+        color: 'rgba(18,194,233,.8)',
         textTransform: 'uppercase',
         letterSpacing: '1.25px',
         '@media (max-width:850px)': {
@@ -99,10 +125,10 @@ const useStyles = makeStyles((theme) => ({
             marginBottom: '0',
         },
     },
-    contactFromInputs_Contact: {
+    contactFormInputs_Contact: {
         minHeight: '20px',
         borderRadius: '10px',
-        border: '3px solid rgb(150,150,150,.4)',
+        border: '2px solid rgb(150,150,150,.4)',
         fontFamily: 'Rubik, sans-serif',
         fontSize: '20px',
         marginBottom: '20px',
@@ -110,10 +136,10 @@ const useStyles = makeStyles((theme) => ({
         color: 'rgba(0,0,0,.87)',
         padding: '5px 15px',
         '&:hover': {
-            border: '3px solid rgba(0,0,0,.8)'
+            border: '2px solid rgba(18,194,233,.8)'
         },
         '&:focus': {
-            border: '3px solid rgba(255,255,255,.87)',
+            border: '2px solid rgba(255,255,255,.87)',
             backgroundColor: 'rgba(255,255,255,.8)',
             outline: 'none',
         },

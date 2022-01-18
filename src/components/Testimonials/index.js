@@ -10,15 +10,28 @@ const Testimonials = () => {
     
     return (
         <section className={`section border-top`} id='testimonials'>
-            <Grid container className={classes.sectionTitleContainer} justifyContent='center'>
+            {/* <Grid container className={classes.sectionTitleContainer} justifyContent='center'>
                 <Typography className={classes.sectionTitleShadow}>
                     Testimonials
                 </Typography>
                 <Typography className={`${classes.sectionTitle} text-theme`} variant='h2'>
                     Kind Words
                 </Typography>
+            </Grid> */}
+            <Grid container className={classes.sectionTitleContainer}>
+                <Typography className={classes.sectionSubtitle} variant='body2'>
+                    Testimonials
+                </Typography>
+                <Typography className={classes.sectionTitle} variant='h2'>
+                    Kind Words
+                </Typography>
             </Grid>
-            <Grid container justifyContent='space-between' spacing={5} >
+            <Grid 
+                container 
+                className={classes.testimonialsContainer_Testimonials}
+                justifyContent='space-between' 
+                spacing={5} 
+            >
                 <Grid item xs={12} lg={6}>
                     <Grid container className={classes.testimonialContainer_Testimonials}>
                         <FaQuoteLeft className={classes.quoteIcon_Testimonials} />

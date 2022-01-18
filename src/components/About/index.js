@@ -35,11 +35,19 @@ const About = () => {
 
     return (
         <section className={`section border-top`} id='about'>
-            <Grid container className={classes.sectionTitleContainer} justifyContent='center'>
+            {/* <Grid container className={classes.sectionTitleContainer} justifyContent='center'>
                 <Typography className={classes.sectionTitleShadow}>
                     About Me
                 </Typography>
                 <Typography className={`${classes.sectionTitle} text-theme`} variant='h2'>
+                    Know Me More
+                </Typography>
+            </Grid> */}
+            <Grid container className={classes.sectionTitleContainer}>
+                <Typography className={classes.sectionSubtitle} variant='body2'>
+                    About Me
+                </Typography>
+                <Typography className={classes.sectionTitle} variant='h2'>
                     Know Me More
                 </Typography>
             </Grid>
@@ -96,7 +104,7 @@ const About = () => {
                 <Grid item xs={12} lg={7}>
                     <Grid container direction='column'>
                         <Grid container direction='column' alignItems='center'>
-                            <Typography className={`${classes.mySkillsTitle_About} text-theme`} variant='h5'>
+                            <Typography className={`${classes.mySkillsTitle_About}`} variant='h5'>
                                 My Skills
                             </Typography>
                             <Grid container className={`skills-bar-container`}>

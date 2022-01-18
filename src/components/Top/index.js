@@ -79,7 +79,7 @@ const Top = () => {
                         <Typography className={`${classes.hiTitle_Top} hi-title`} variant='h2'>
                             Hi, I'm Xavy Romeo
                         </Typography>
-                        <Typography className={`${classes.webDevTitle_Top} web-dev-title text-theme`} variant='h2'>
+                        <Typography className={`${classes.webDevTitle_Top} web-dev-title`} variant='h2'>
                             {/* Front End  */}
                             Web Developer
                         </Typography>

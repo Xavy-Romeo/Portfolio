@@ -130,6 +130,12 @@
 }
 /* end section styles */
 
+/* top section styles */
+.square {
+  border-image: linear-gradient(to right, rgba(18,194,233,.2), rgba(246,79,89,.2) 80%, rgba(246,79,89,.2))1;
+}
+/* end top section styles */
+
 /* skills bar styles */
 .skills-bar-container {
   position: relative;
@@ -142,7 +148,7 @@
   left:0;
   right:0;
   bottom:0;
-  border-radius:15px;
+  border-radius:10px;
   border:2px solid transparent;
   background:radial-gradient(rgb(246,79,89), rgb(18,194,233), rgb(246,79,89)) border-box;
   -webkit-mask: 

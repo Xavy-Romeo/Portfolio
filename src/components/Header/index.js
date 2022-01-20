@@ -50,7 +50,7 @@ const Header = () => {
                     <Grid className='header-title' item xs={8} sm={5} lg={3}>
                         <a href='#home' className={classes.titleLink_Header}>
                             <Typography className={`${classes.headerTitle_Header}`} variant='h1'>
-                                Xavy Romeo
+                                Xavy
                             </Typography>
                         </a>
                     </Grid>

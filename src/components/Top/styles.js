@@ -67,6 +67,7 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     info_Top: {
+        maxWidth: '90%',
         color: 'rgba(40,40,40,.7)',
         paddingBottom: '10px',
         '@media (max-width:1120px)': {
@@ -74,6 +75,7 @@ const useStyles = makeStyles((theme) => ({
         },
         '@media (max-width:959px)': {
             fontSize: '20px',
+            maxWidth: '100%',
         },
         '@media (max-width:650px)': {
             fontSize: '16px',
@@ -105,6 +107,7 @@ const useStyles = makeStyles((theme) => ({
     //     }
     // },
     imageContainer_Top: {
+        position: 'relative',
         '@media (max-width:959px)': {
             justifyContent: 'center',
             marginTop: '40px'
@@ -117,16 +120,19 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         borderRadius: '10px',
         boxShadow: theme.shadows[10],
-        '@media (max-width:1399px)': {
+        transform: 'rotate(7deg)', 
+        '@media (max-width:1499px)': {
             height: '600px',
-            width: '400px'
+            width: '400px',
+            marginRight: '40px'
         },
         '@media (max-width:1200px)': {
             height: '550px',
             width: '367px'
         },
         '@media (max-width:959px)': {
-            height: '100%'
+            height: '100%',
+            transform: 'rotate(0deg)',
         }
     },
     image_Top: {
@@ -135,8 +141,30 @@ const useStyles = makeStyles((theme) => ({
         objectFit: 'cover',
         objectPosition: 'top',
         borderRadius: '10px',
-        '@media (max-width:1200px)': {
+        '@media (max-width:1499px)': {
             height: '100%'
+        }
+    },
+    imageBack_Top: {
+        position: 'absolute',
+        top: 30,
+        left: -20,
+        background: 'rgba(18,194,233,.2)',
+        transform: 'rotate(-7deg)',
+        height: '700px',
+        width: '467px',
+        borderRadius: '10px',
+        zIndex: '-1',
+        '@media (max-width:1499px)': {
+            height: '600px',
+            width: '400px'
+        },
+        '@media (max-width:1200px)': {
+            height: '550px',
+            width: '367px'
+        },
+        '@media (max-width:959px)': {
+            display: 'none'
         }
     },
     square_Top: {
@@ -149,7 +177,7 @@ const useStyles = makeStyles((theme) => ({
         top: '300px',
         left: 0,
         zIndex: '-1',
-        '@media (max-width:1399px)': {
+        '@media (max-width:1499px)': {
             top: '250px',
         },
         '@media (max-width:1200px)': {

@@ -65,6 +65,13 @@ const Top = () => {
             .to('.scroll-down', 
                 {y: 50, duration: 1.5, repeat: -1, yoyo: true}
             )
+            .fromTo('.profile-img-back', 
+                {opacity: 0}, 
+                {opacity: 1, 
+                    duration: 1
+                },
+                '-=3'
+            )
         ;
     }, []); 
 
@@ -108,6 +115,7 @@ const Top = () => {
                                 height='100%'
                             />
                         </Box>
+                        <Box className={`${classes.imageBack_Top} profile-img-back`} />
                     </Grid>
                 </Grid>
                 <Box className={classes.scrollDownBox_Top}>

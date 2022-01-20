@@ -11,7 +11,7 @@ My professional portfolio page!
 5. [Questions](#Questions)
 
 ## Screenshots:
-![Portolio-Img](https://user-images.githubusercontent.com/79165884/145643068-36687391-686e-4b96-a4b4-2ef057a046ef.png)
+![Portfolio](https://user-images.githubusercontent.com/79165884/150290963-9569dd26-aa97-41f3-96e0-a6bc182ba444.png)
 
 ## Usage:
 Visit the site and be impressed! 

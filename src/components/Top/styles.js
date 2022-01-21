@@ -133,6 +133,7 @@ const useStyles = makeStyles((theme) => ({
         '@media (max-width:959px)': {
             height: '100%',
             transform: 'rotate(0deg)',
+            marginRight: '0'
         }
     },
     image_Top: {

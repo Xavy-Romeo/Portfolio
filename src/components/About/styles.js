@@ -197,8 +197,21 @@ const useStyles = makeStyles((theme) => ({
     },
     experienceContainer_About: {
         margin: '40px 0 50px 0',
+        '@media (max-width:1279px)': {
+            display: 'flex',
+            justifyContent: 'center'
+        },
         '@media (max-width:959px)': {
             marginBottom: '10px',
+        }
+    },
+    experienceColumn_About: {
+        '@media (max-width:799px)': {
+            paddingRight: '20px'
+        },
+        '@media (max-width:599px)': {
+            textAlign: 'center',
+            marginTop: '30px'
         }
     },
     experienceItem_About: {
@@ -206,13 +219,22 @@ const useStyles = makeStyles((theme) => ({
     },
     aboutTitles_About: {
         fontWeight: '500',
-        letterSpacing: '1.25px'
+        letterSpacing: '1.25px',
+        '@media (max-width:670px)': {
+            fontSize: '1.09rem'
+        },
+        '@media (max-width:599px)': {
+            fontSize: '1.25rem'
+        }
     },
     aboutTitlesBorder_About: {
         borderImage: 'linear-gradient(to left, rgb(18,194,233), rgb(196,113,237), rgb(246,79,89)) 1',
         borderBottom: '2px solid transparent',
         width: '20%',
-        marginBottom: '15px'
+        marginBottom: '15px',
+        '@media (max-width:599px)': {
+            width: '100%',
+        }
     },
     positionTitle_About: {
         fontWeight: '500'

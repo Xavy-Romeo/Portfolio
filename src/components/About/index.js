@@ -137,8 +137,8 @@ const About = () => {
                         </Grid>
                         
                         <Grid container className={classes.experienceContainer_About}>
-                            <Grid item xs={6}>
-                                <Grid container direction='column'>
+                            <Grid item xs={12} sm={4}>
+                                <Grid container className={classes.experienceColumn_About} direction='column'>
                                     <Typography className={classes.aboutTitles_About} variant='subtitle1'>
                                         Education
                                     </Typography>
@@ -153,9 +153,6 @@ const About = () => {
                                         <Typography variant='caption'>
                                             Certificate
                                         </Typography>
-                                        <Typography variant='caption'>
-                                            2021
-                                        </Typography>
                                     </Grid>
                                     <Grid container className={classes.experienceItem_About} direction='column'>
                                         <Typography className={classes.positionTitle_About} variant='body1'>
@@ -167,14 +164,11 @@ const About = () => {
                                         <Typography variant='caption'>
                                             Bachelor's Degree
                                         </Typography>
-                                        <Typography variant='caption'>
-                                            2010
-                                        </Typography>
                                     </Grid>
                                 </Grid>
                             </Grid>
-                            <Grid item xs={6}>
-                                <Grid container direction='column'>
+                            <Grid item xs={12} sm={4}>
+                                <Grid container className={classes.experienceColumn_About} direction='column'>
                                     <Typography className={classes.aboutTitles_About} variant='subtitle1'>
                                         Work Experience
                                     </Typography>
@@ -189,9 +183,6 @@ const About = () => {
                                         <Typography variant='caption'>
                                             Los Angeles, CA 
                                         </Typography>
-                                        <Typography variant='caption'>
-                                            Sep 2017 - Jan 2019
-                                        </Typography>
                                     </Grid>
                                     <Grid container className={classes.experienceItem_About} direction='column'>
                                         <Typography className={classes.positionTitle_About} variant='body1'>
@@ -203,8 +194,21 @@ const About = () => {
                                         <Typography variant='caption'>
                                             Vernon, CA 
                                         </Typography>
-                                        <Typography variant='caption'>
-                                            Jul 2014 - Jul 2017
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                            <Grid item xs={12} sm={4}>
+                                <Grid container className={classes.experienceColumn_About} direction='column'>
+                                    <Typography className={classes.aboutTitles_About} variant='subtitle1'>
+                                        Online Training
+                                    </Typography>
+                                    <Box className={classes.aboutTitlesBorder_About} />
+                                    <Grid container className={classes.experienceItem_About} direction='column'>
+                                        <Typography className={classes.positionTitle_About} variant='body1'>
+                                            Web Development
+                                        </Typography>
+                                        <Typography variant='body2'>
+                                            CodingPhase
                                         </Typography>
                                     </Grid>
                                 </Grid>

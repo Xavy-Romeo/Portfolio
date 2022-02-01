@@ -9,33 +9,35 @@ import useStyles from './styles';
 import Profile2 from '../../assets/images/profile2.jpg';
 import Bootstrap from '../../assets/images/bootstrap.svg';
 import Css from '../../assets/images/css.svg';
-import Express from '../../assets/images/express.svg';
+// import Express from '../../assets/images/express.svg';
 import Git from '../../assets/images/git.svg';
-import GraphQL from '../../assets/images/graphql.svg'
+// import GraphQL from '../../assets/images/graphql.svg';
 import Html from '../../assets/images/html.svg';
 import Jquery from '../../assets/images/jquery.svg';
 import Js from '../../assets/images/js.svg';
-import MongoDB from '../../assets/images/mongo.svg';
+// import MongoDB from '../../assets/images/mongo.svg';
 import Mui from '../../assets/images/mui.svg';
+import Php from '../../assets/images/php.svg';
 import ReactIcon from '../../assets/images/react.svg';
 import Sass from '../../assets/images/sass.svg';
+import WordPress from '../../assets/images/wordpress.svg';
 import ResumePdf from '../../assets/files/resume.pdf';
 
 const About = () => {
     const classes = useStyles();
     
     const skills = [
-        {name: 'React', image: ReactIcon},
         {name: 'Html', image: Html},
         {name: 'Css', image: Css},
         {name: 'JavaScript', image: Js},
         {name: 'Sass', image: Sass},
+        {name: 'React', image: ReactIcon},
         {name: 'JQuery', image: Jquery},
         {name: 'Material-UI', image: Mui},
         {name: 'Bootstrap', image: Bootstrap},
-        {name: 'Express', image: Express},
-        {name: 'MongoDB', image: MongoDB},
-        {name: 'GraphQL', image: GraphQL},
+        {name: 'WordPress', image: WordPress},
+        {name: 'Php', image: Php},
+        // {name: 'GraphQL', image: GraphQL},
         {name: 'Git', image: Git}
     ];
 

@@ -44,7 +44,7 @@ const Testimonials = () => {
                         </Typography>
                         <Box className={classes.imgBox_Testimonials}>
                             <img 
-                                src='https://media-exp1.licdn.com/dms/image/C5603AQFz5EgQChslXQ/profile-displayphoto-shrink_800_800/0/1598149946177?e=1644451200&v=beta&t=dbhxNofnJubrGhzJ41Az9u8GYjsjJB0tXDr5so6PHzk' 
+                                src='https://avatars.githubusercontent.com/u/59941960?v=4' 
                                 className={classes.img_Testimonials}
                                 height='100%'
                                 alt='Celina Profile'

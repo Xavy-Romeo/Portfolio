@@ -13,8 +13,8 @@ const projects = [
         languages: 'React, GraphQL, Context API, React Hooks, Node, Material-UI, JavaScript, MongoDB', 
         image: TheXavyShop,
         description: `A full stack e-commerce application. Come and purchase your favorite sports gear and equipment.`,
-        site: 'https://xavy-romeo.github.io/caesars-landing/',
-        github: 'https://github.com/Xavy-Romeo/caesars-landing'
+        site: 'https://the-xavy-shop.herokuapp.com/',
+        github: 'https://github.com/Xavy-Romeo/the-xavy-shop'
     },
     {
         name: 'HowRU', 
@@ -22,8 +22,8 @@ const projects = [
         languages: 'React, GraphQL, Express, Node, MongoDB, JavaScript, AJAX', 
         image: HowRU,
         description: `A full stack mental health and wellness application. A digital tool to assist in finding resources to deal with mood shifts, anxiety, stress, sadness, and depression.`,
-        site: 'https://xavy-romeo.github.io/caesars-landing/',
-        github: 'https://github.com/Xavy-Romeo/caesars-landing'
+        site: 'https://howru-meditation.herokuapp.com/',
+        github: 'https://github.com/Xavy-Romeo/how-r-u'
     },
     {
         name: 'Caesars', 

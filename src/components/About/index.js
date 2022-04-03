@@ -9,21 +9,21 @@ import useStyles from './styles';
 import Profile2 from '../../assets/images/profile2.jpg';
 import Bootstrap from '../../assets/images/bootstrap.svg';
 import Css from '../../assets/images/css.svg';
-// import Express from '../../assets/images/express.svg';
-import Git from '../../assets/images/git.svg';
-// import GraphQL from '../../assets/images/graphql.svg';
+import Express from '../../assets/images/express.svg';
+// import Git from '../../assets/images/git.svg';
+import GraphQL from '../../assets/images/graphql.svg';
 import Html from '../../assets/images/html.svg';
-// import Java from '../../assets/images/java.svg';
+import Java from '../../assets/images/java.svg';
 import Jquery from '../../assets/images/jquery.svg';
 import Js from '../../assets/images/js.svg';
-import Litmus from '../../assets/images/litmus.svg';
-import Mailchimp from '../../assets/images/mailchimp.svg';
-// import MongoDB from '../../assets/images/mongo.svg';
+// import Litmus from '../../assets/images/litmus.svg';
+// import Mailchimp from '../../assets/images/mailchimp.svg';
+import MongoDB from '../../assets/images/mongo.svg';
 import Mui from '../../assets/images/mui.svg';
 // import Php from '../../assets/images/php.svg';
 import ReactIcon from '../../assets/images/react.svg';
 import Sass from '../../assets/images/sass.svg';
-import WordPress from '../../assets/images/wordpress.svg';
+// import WordPress from '../../assets/images/wordpress.svg';
 import ResumePdf from '../../assets/files/resume.pdf';
 
 const About = () => {
@@ -32,21 +32,21 @@ const About = () => {
     const skills = [
         {name: 'React', image: ReactIcon},
         {name: 'JavaScript', image: Js},
+        {name: 'Java', image: Java},
         {name: 'Html', image: Html},
         {name: 'Css', image: Css},
         {name: 'Sass', image: Sass},
-        // {name: 'Java', image: Java},
         {name: 'JQuery', image: Jquery},
         {name: 'Material-UI', image: Mui},
         {name: 'Bootstrap', image: Bootstrap},
-        // {name: 'Express', image: Express},
-        // {name: 'MongoDB', image: MongoDB},
-        // {name: 'GraphQL', image: GraphQL},
+        {name: 'Express', image: Express},
+        {name: 'MongoDB', image: MongoDB},
+        {name: 'GraphQL', image: GraphQL},
         // {name: 'Php', image: Php},
-        {name: 'Git', image: Git},
-        {name: 'Mailchimp', image: Mailchimp},
-        {name: 'Litmus', image: Litmus},
-        {name: 'Wordpress', image: WordPress}
+        // {name: 'Git', image: Git},
+        // {name: 'Mailchimp', image: Mailchimp},
+        // {name: 'Litmus', image: Litmus},
+        // {name: 'Wordpress', image: WordPress}
     ];
 
     return (

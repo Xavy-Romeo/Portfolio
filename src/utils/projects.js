@@ -72,7 +72,7 @@ const projects = [
         type: 'Landing Page', 
         languages: 'HTML, CSS', 
         image: IntelliRisk,
-        description: `A landing page for IntelliRisk. Manage your risk all in one app. `,
+        description: `A landing page for IntelliRisk. Manage your risk all in one app.`,
         site: 'https://xavy-romeo.github.io/intellirisk/',
         github: 'https://github.com/Xavy-Romeo/intellirisk'
     },

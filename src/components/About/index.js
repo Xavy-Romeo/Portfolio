@@ -20,7 +20,7 @@ import Js from '../../assets/images/js.svg';
 // import Mailchimp from '../../assets/images/mailchimp.svg';
 import MongoDB from '../../assets/images/mongo.svg';
 import Mui from '../../assets/images/mui.svg';
-import Php from '../../assets/images/php.svg';
+// import Php from '../../assets/images/php.svg';
 import ReactIcon from '../../assets/images/react.svg';
 import Sass from '../../assets/images/sass.svg';
 // import WordPress from '../../assets/images/wordpress.svg';

@@ -9,21 +9,21 @@ import useStyles from './styles';
 import Profile2 from '../../assets/images/profile2.jpg';
 import Bootstrap from '../../assets/images/bootstrap.svg';
 import Css from '../../assets/images/css.svg';
-// import Express from '../../assets/images/express.svg';
+import Express from '../../assets/images/express.svg';
 import Git from '../../assets/images/git.svg';
-// import GraphQL from '../../assets/images/graphql.svg';
+import GraphQL from '../../assets/images/graphql.svg';
 import Html from '../../assets/images/html.svg';
 // import Java from '../../assets/images/java.svg';
-// import Jquery from '../../assets/images/jquery.svg';
+import Jquery from '../../assets/images/jquery.svg';
 import Js from '../../assets/images/js.svg';
-import Litmus from '../../assets/images/litmus.svg';
-import Mailchimp from '../../assets/images/mailchimp.svg';
-// import MongoDB from '../../assets/images/mongo.svg';
+// import Litmus from '../../assets/images/litmus.svg';
+// import Mailchimp from '../../assets/images/mailchimp.svg';
+import MongoDB from '../../assets/images/mongo.svg';
 import Mui from '../../assets/images/mui.svg';
 import Php from '../../assets/images/php.svg';
 import ReactIcon from '../../assets/images/react.svg';
 import Sass from '../../assets/images/sass.svg';
-import WordPress from '../../assets/images/wordpress.svg';
+// import WordPress from '../../assets/images/wordpress.svg';
 import ResumePdf from '../../assets/files/resume.pdf';
 
 const About = () => {
@@ -36,17 +36,17 @@ const About = () => {
         {name: 'Html', image: Html},
         {name: 'Css', image: Css},
         {name: 'Sass', image: Sass},
-        // {name: 'JQuery', image: Jquery},
+        {name: 'JQuery', image: Jquery},
         {name: 'Material-UI', image: Mui},
         {name: 'Bootstrap', image: Bootstrap},
-        // {name: 'Express', image: Express},
-        // {name: 'MongoDB', image: MongoDB},
-        // {name: 'GraphQL', image: GraphQL},
-        {name: 'Php', image: Php},
         {name: 'Git', image: Git},
-        {name: 'Mailchimp', image: Mailchimp},
-        {name: 'Litmus', image: Litmus},
-        {name: 'Wordpress', image: WordPress}
+        {name: 'Express', image: Express},
+        {name: 'MongoDB', image: MongoDB},
+        {name: 'GraphQL', image: GraphQL},
+        // {name: 'Php', image: Php},
+        // {name: 'Mailchimp', image: Mailchimp},
+        // {name: 'Litmus', image: Litmus},
+        // {name: 'Wordpress', image: WordPress}
     ];
 
     return (
@@ -97,13 +97,13 @@ const About = () => {
                             </Box>
                         </Box> 
                         <Box>
-                            <a href='mailto:xavy.romeo.sse@gmail.com' className={classes.emailContainer_About}>
+                            <a href='mailto:javier.vazquez.sse@gmail.com' className={classes.emailContainer_About}>
                                 <Typography className={classes.emailTitle_About}>
                                     <MdEmail className={classes.emailIcon_About} />
                                     Email: 
                                 </Typography>
                                 <Typography className={classes.email_About} variant='body2'>
-                                    Xavy.Romeo.SSE@gmail.com
+                                    Javier.Vazquez.SSE@gmail.com
                                 </Typography>
                             </a>
                         </Box>   
@@ -111,7 +111,7 @@ const About = () => {
                             <a href='https://github.com/Xavy-Romeo' target='_blank' rel='noopener noreferrer'>
                                 <FaGithub className={classes.socialIcon_About} />
                             </a>
-                            <a href='https://www.linkedin.com/in/xavy-romeo/' target='_blank' rel='noopener noreferrer'>
+                            <a href='https://www.linkedin.com/in/javier-romeo-vazquez/' target='_blank' rel='noopener noreferrer'>
                                 <FaLinkedin className={classes.socialIcon_About} />
                             </a>
                         </Grid>

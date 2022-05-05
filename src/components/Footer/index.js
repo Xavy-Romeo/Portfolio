@@ -22,7 +22,7 @@ const Footer = () => {
                             <a href='https://github.com/Xavy-Romeo' target='_blank' rel='noopener noreferrer'>
                                 <FaGithub className={classes.icon_Footer} />
                             </a>
-                            <a href='https://www.linkedin.com/in/xavy-romeo/' target='_blank' rel='noopener noreferrer'>
+                            <a href='https://www.linkedin.com/in/javier-romeo-vazquez/' target='_blank' rel='noopener noreferrer'>
                                 <FaLinkedin className={classes.icon_Footer} />
                             </a>
                         </Grid>

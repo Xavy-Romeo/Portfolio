@@ -7,22 +7,24 @@ import { FiDownload } from 'react-icons/fi';
 
 import useStyles from './styles';
 import Profile2 from '../../assets/images/profile2.jpg';
-import Bootstrap from '../../assets/images/bootstrap.svg';
+// import Bootstrap from '../../assets/images/bootstrap.svg';
 import Css from '../../assets/images/css.svg';
 import Express from '../../assets/images/express.svg';
 import Git from '../../assets/images/git.svg';
 import GraphQL from '../../assets/images/graphql.svg';
 import Html from '../../assets/images/html.svg';
-// import Java from '../../assets/images/java.svg';
-import Jquery from '../../assets/images/jquery.svg';
+import Java from '../../assets/images/java.svg';
+// import Jquery from '../../assets/images/jquery.svg';
 import Js from '../../assets/images/js.svg';
 // import Litmus from '../../assets/images/litmus.svg';
 // import Mailchimp from '../../assets/images/mailchimp.svg';
 import MongoDB from '../../assets/images/mongo.svg';
-import Mui from '../../assets/images/mui.svg';
+// import Mui from '../../assets/images/mui.svg';
 // import Php from '../../assets/images/php.svg';
+import PostgreSQL from '../../assets/images/postgresql.svg';
 import ReactIcon from '../../assets/images/react.svg';
 import Sass from '../../assets/images/sass.svg';
+import Spring from '../../assets/images/spring.svg';
 // import WordPress from '../../assets/images/wordpress.svg';
 import ResumePdf from '../../assets/files/resume.pdf';
 
@@ -30,19 +32,21 @@ const About = () => {
     const classes = useStyles();
     
     const skills = [
+        {name: 'Java', image: Java},
+        {name: 'Spring Boot', image: Spring},
         {name: 'React', image: ReactIcon},
         {name: 'JavaScript', image: Js},
-        // {name: 'Java', image: Java},
         {name: 'Html', image: Html},
         {name: 'Css', image: Css},
-        {name: 'Sass', image: Sass},
-        {name: 'JQuery', image: Jquery},
-        {name: 'Material-UI', image: Mui},
-        {name: 'Bootstrap', image: Bootstrap},
-        {name: 'Git', image: Git},
-        {name: 'Express', image: Express},
+        {name: 'PostgreSQL', image: PostgreSQL},
         {name: 'MongoDB', image: MongoDB},
+        {name: 'Sass', image: Sass},
+        // {name: 'JQuery', image: Jquery},
+        // {name: 'Material-UI', image: Mui},
+        // {name: 'Bootstrap', image: Bootstrap},
+        {name: 'Express', image: Express},
         {name: 'GraphQL', image: GraphQL},
+        {name: 'Git', image: Git},
         // {name: 'Php', image: Php},
         // {name: 'Mailchimp', image: Mailchimp},
         // {name: 'Litmus', image: Litmus},

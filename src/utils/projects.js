@@ -1,17 +1,17 @@
 import TheXavyShop from '../assets/images/the-xavy-shop.png';
-// import HowRU from '../assets/images/howru.png';
-// import ManageIt from '../assets/images/manage-it.jpg';
+import HowRU from '../assets/images/howru.png';
+import ManageIt from '../assets/images/manage-it.jpg';
 // import RunBuddy from '../assets/images/run-buddy.png';
 // import Target from '../assets/images/target.png';
 // import IntelliRisk from '../assets/images/intellirisk.png';
 // import AMC from '../assets/images/amc.png';
 import Caesars from '../assets/images/caesars.png';
-import HGTV from '../assets/images/hgtv.jpg';
+// import HGTV from '../assets/images/hgtv.jpg';
 // import Bulgari from '../assets/images/bulgari.jpg';
 // import Coach from '../assets/images/coach.jpg';
 // import Cpk from '../assets/images/cpk.jpg';
 // import Relais from '../assets/images/relais.jpg';
-import Taskmaster from '../assets/images/taskmaster.jpg';
+// import Taskmaster from '../assets/images/taskmaster.jpg';
 
 const projects = [
     {
@@ -32,42 +32,42 @@ const projects = [
         site: 'https://the-xavy-shop.herokuapp.com/',
         github: 'https://github.com/Xavy-Romeo/the-xavy-shop'
     },
-    // {
-    //     name: 'HowRU', 
-    //     type: 'Wellness App', 
-    //     languages: 'React, GraphQL, Express, Node, MongoDB, JavaScript, AJAX', 
-    //     image: HowRU,
-    //     description: `A full stack mental health and wellness application. A digital tool to assist in finding resources to deal with mood shifts, anxiety, stress, sadness, and depression.`,
-    //     site: 'https://howru-meditation.herokuapp.com/',
-    //     github: 'https://github.com/Xavy-Romeo/how-r-u'
-    // },
-    // {
-    //     name: 'Manage It', 
-    //     type: 'Task Manager App', 
-    //     languages: 'Handlebars, Javascript, AJAX, MySQL, Express, Node', 
-    //     image: ManageIt,
-    //     description: `Manage mundane repetitve tasks quickly and easily. Send reminders via text to yourself or others. Manage it is a simple, barebones checklist application that lets you create checklists and edit it to your desires. Additionally, there is a functionality to send a text at a scheduled time for the task of your choosing.`,
-    //     site: 'https://cryptic-bastion-04157.herokuapp.com/',
-    //     github: 'https://github.com/Xavy-Romeo/manage-it'
-    // },
     {
-        name: 'Taskmaster Pro',
-        type: 'Task App',
-        languages: '',
-        image: Taskmaster,
-        description:'',
-        site: 'https://xavy-romeo.github.io/taskmaster-pro/',
-        github: 'https://github.com/Xavy-Romeo/taskmaster-pro'
+        name: 'HowRU', 
+        type: 'Wellness App', 
+        languages: 'React, GraphQL, Express, Node, MongoDB, JavaScript, AJAX', 
+        image: HowRU,
+        description: `A full stack mental health and wellness application. A digital tool to assist in finding resources to deal with mood shifts, anxiety, stress, sadness, and depression.`,
+        site: 'https://howru-meditation.herokuapp.com/',
+        github: 'https://github.com/Xavy-Romeo/how-r-u'
     },
     {
-        name: 'HGTV Email',
-        type: 'Newsletter Email',
-        languages: 'HTML, CSS',
-        image: HGTV,
-        description:"A Newsletter email for HGTV. View this week's HGTV favorites.",
-        site: 'https://xavy-romeo.github.io/hgtv-newsletter-email/',
-        github: 'https://github.com/Xavy-Romeo/hgtv-newsletter-email'
-    },
+        name: 'Manage It', 
+        type: 'Task Manager App', 
+        languages: 'Handlebars, Javascript, AJAX, MySQL, Express, Node', 
+        image: ManageIt,
+        description: `Manage mundane repetitve tasks quickly and easily. Send reminders via text to yourself or others. Manage it is a simple, barebones checklist application that lets you create checklists and edit it to your desires. Additionally, there is a functionality to send a text at a scheduled time for the task of your choosing.`,
+        site: 'https://cryptic-bastion-04157.herokuapp.com/',
+        github: 'https://github.com/Xavy-Romeo/manage-it'
+    }
+    // {
+    //     name: 'Taskmaster Pro',
+    //     type: 'Task App',
+    //     languages: '',
+    //     image: Taskmaster,
+    //     description:'',
+    //     site: 'https://xavy-romeo.github.io/taskmaster-pro/',
+    //     github: 'https://github.com/Xavy-Romeo/taskmaster-pro'
+    // },
+    // {
+    //     name: 'HGTV Email',
+    //     type: 'Newsletter Email',
+    //     languages: 'HTML, CSS',
+    //     image: HGTV,
+    //     description:"A Newsletter email for HGTV. View this week's HGTV favorites.",
+    //     site: 'https://xavy-romeo.github.io/hgtv-newsletter-email/',
+    //     github: 'https://github.com/Xavy-Romeo/hgtv-newsletter-email'
+    // },
     // {
     //     name: 'AMC Email',
     //     type: 'Transactional Email',
